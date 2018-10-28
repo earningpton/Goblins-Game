@@ -1,6 +1,6 @@
 .frame {
     text-align: center;
-    margin: none;
+    margin: auto;
 }
 
 
@@ -10,5 +10,5 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: none;
+    margin: auto;
 }
