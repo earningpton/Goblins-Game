@@ -1633,7 +1633,11 @@ pick = document.getElementById("stratPicker").value;
 
 
 function clipClick(number){
-    number = number*(1+processors)*(1+megaClipperLevel)*(1+clipmakerLevel)*(1+trust)*(1+memory)
+    if(number == "main"){
+        number = 1
+        number = number*(1+processors)*(1+megaClipperLevel)*(1+clipmakerLevel)*(1+trust)*(1+memory)
+        }
+
     if (dismantle>=4){
         finalClips++;
         }
