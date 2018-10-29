@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Textures brickwork  texture of stone wall. rock № 23750 </title>
+<meta name="DESCRIPTION" content=" Free photobank tOrange.biz offers download free image Texture of stone wall. 23750 "/>
+<link rel="canonical" href="https://torange.biz/texture-stone-wall-23750"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="copyright" href="/Rules.html" />
+<meta name="author" content="tOrange.biz" />
+<meta property="og:image" content="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg" id="pageico"/>
+<meta property="og:title" content="Textures brickwork  texture of stone wall. rock № 23750 " />
+<meta itemprop="name" content="Free images, pictures and photos of tOrange.biz"/>
+<meta itemprop="description" content=" Free photobank tOrange.biz offers download free image Texture of stone wall. 23750 "/>
+<meta itemprop="image" content="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg"/>
+<!--add_meta_head-->
+<link href="https://plus.google.com/+TorangeBiz" rel="publisher" />
+<meta name="p:domain_verify" content="c638f69f886e6a2e7225a11e76f97f33" />
+<meta name="google-site-verification" content="cfrs-S95zE-oYx3Qfba2zdRmoOCVJcsq9IGZwOEOAnw" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/torange.css" >
+<style  type="text/css" ><!--add_css--></style>
+<link rel="alternate" hreflang="ru" href="https://torange.biz/ru/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="de" href="https://torange.biz/de/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="fr" href="https://torange.biz/fr/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="it" href="https://torange.biz/it/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="es" href="https://torange.biz/es/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="pt" href="https://torange.biz/pt/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="zh" href="https://torange.biz/cn/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="ja" href="https://torange.biz/jp/texture-stone-wall-23750" />
+<link rel="alternate" hreflang="uk" href="https://torange.biz/ua/texture-stone-wall-23750" />
+
+<link rel="icon" sizes="any" type="image/svg+xml" href="/img/logo.svg" />
+</head>
+
+<body onresize="resizegal();" id="body">
+
+<script type="text/javascript">
+
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","/livesearch.php?l=2&q="+str,true);
+  xmlhttp.send();
+}
+
+function showModal(str,parm='') {
+var modal = document.getElementById('Modal');
+ modal.style.display = "block";
+
+  if (str=='shareorig') { 
+    document.getElementById("modalcontentfirst").style.width="305px";
+    }
+
+
+  if (str=='morefx') { 
+    document.getElementById("modalcontentfirst").style.width="90%";
+    }
+
+
+  if (str=='downloadfx') { 
+    document.getElementById("liveModal").innerHTML="<div>Wait, your image is being prepared for download.<br>Please do not close this page.<br>You will help us very much if you describe this image.<br>Attention! Generating a quality image requires a lot of server resources. Depending on the complexity of the effects, generation can take up to 10 minutes.<br>You can help us with money on a new server by buying our photo, or simply by telling about our free photobank in social networks.<br></div><div>If the picture with your effect does not load, or you have closed this page - you will be able to find your effect on the page: <a href=/search/Free-picture-effects-online>New effects</a></div><iframe src=\"/captcha.php?p="+parm+"&l=2\" scrolling=\"no\" style=\"border:none;width:300px;height:350px;margin-left: calc(50% - 150px);\"></iframe>";
+    }
+
+  if (str=='musthave') { 
+//    document.getElementById("liveModal").innerHTML="";
+    }
+
+
+  if (str.length==0) { 
+    document.getElementById("liveModal").innerHTML="";
+    document.getElementById("liveModal").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+  if (str=='musthave') { }else{      document.getElementById("liveModal").innerHTML=this.responseText;}
+//      document.getElementById("liveModal").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","/modal.php?l=2&q="+str+"&p="+parm,true);
+  xmlhttp.send();
+}
+
+
+
+
+function scrolldiv(c,d='scrollme1') {
+var d= document.getElementById(d);
+if(c=='+'){d.scrollBy(250,0);}
+if(c=='-'){d.scrollBy(-250,0);}
+}
+
+var scrollPageArray = [];
+function scrollcontrol(id){
+var d= document.getElementById(id);
+//console.log('left'+d.scrollLeft);
+var maxScrollLeft = d.scrollWidth - d.clientWidth;
+if(d.scrollLeft>(maxScrollLeft-10)){
+if(!scrollPageArray[id]){scrollPageArray[id]=0;}
+scrollPageArray[id]++;
+loadNextPageContent(id);
+}
+//console.log('height'+maxScrollLeft);
+}
+
+function loadNextPageContent(id){
+//console.log('loading page# '+ scrollPageArray[id] +' to '+id);
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById(id).innerHTML+=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","/loadaddcontent.php?l=2&id=23750&frame="+id+"&p="+scrollPageArray[id],true);
+  xmlhttp.send();
+}
+
+</script> 
+
+<div id="topmenu">
+<a href="/" alt="Free photobank torange.biz"  id="toplogo" class="logoimg"></a>
+<button id="toplogin" onclick="showModal('login');"></button>
+<div id="SearchLine">
+<input type="search" placeholder="Search" id="SearchBox" AUTOCOMPLETE="off" onkeyup="showResult(this.value)" />
+<button id="searchbutton"  onclick="startsearch('en');">Search</button>
+<script type="text/javascript">
+if(document.getElementById('SearchBox').value.length>0){document.getElementById('searchbutton').style.display='block';}
+function startsearch(l) {
+var s= document.getElementById('SearchBox').value;
+if(s.length>0){
+if(l=='en'){location.href= '/search/'+s;}else{location.href= '/'+l+'/search/'+s;}
+}
+}
+
+
+function swithfolders(l,c=0){
+//alert(l);
+var e = document.getElementById(l).querySelectorAll('li[data-show]');
+//console.log(e);
+    for (var n = 0;  n < e.length; n++) {
+        if(n==c-1){
+		e[n].dataset.show=1;
+        }else{
+		e[n].dataset.show=0;
+        }
+    }
+}
+
+
+</script>
+
+
+<div id="livesearch"></div>
+</div>
+
+<div id="submenu">
+<ul>
+  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Explore</a>
+    <div class="dropdown-content"><a href="/gallery/new-photos">New photos</a><a href="/gallery/new-year-cards">New Year cards</a><a href="/gallery/background-congratulations">Background for congratulations</a><a href="/gallery/mourning-candles">Mourning candles</a><a href="/gallery/flowers-snowdrops-desktop-wallpapers">Flowers snowdrops desktop wallpapers</a><a href="/gallery/flowering-branches-fruit-trees">Flowering branches of fruit trees</a><a href="/gallery/fractal-backgrounds">Fractal backgrounds</a><a href="/gallery/wood-textures">Wood textures</a><a href="/gallery/backgrounds-flowers-snowdrops">Backgrounds with flowers of snowdrops</a><a href="/gallery/backgrounds-hearts">Backgrounds hearts</a></div>
+</li>
+  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Popular</a>
+    <div class="dropdown-content"><a href="/nature">Nature</a><a href="/background">Background</a><a href="/illustration">Illustration</a><a href="/object">Object</a><a href="/plant">Plant</a><a href="/everyday-home-life">Everyday home life</a><a href="/food">Food</a><a href="/animal">Animal</a><a href="/history">History</a><a href="/celebration">Celebration</a><a href="/flower">Flower</a><a href="/texture">Texture</a><a href="/art">Art</a><a href="/tree">Tree</a><a href="/creation">Creation</a><a href="/tourism">Tourism</a><a href="/architecture">Architecture</a><a href="/city">City</a><a href="/entertainment">Entertainment</a><a href="/adornment">Adornment</a>   </div>
+
+</li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content"><a href="/Rules.html" >Rules</a><a href="/faq.html" >FAQ</a><a href="Contacts.html" >Contacts</a><a href="Comments.html" >Comments</a><a href="/search/Free-picture-effects-online" >New effects</a></div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">DONATE</a>
+    <div class="dropdown-content"><!--donate-->
+<noindex>
+<span class="h2" onclick="window.open('https://www.shutterstock.com/g/Valdemar Fishmen?rid=163573054&utm_medium=email&utm_source=ctrbreferral-t-link'); ">SHUTTERSTOCK</span>
+<span class="h2" onclick="window.open('https://ru.123rf.com/profile_fishmenv/#fishmenv');">123RF</span>
+<span class="h2" onclick="window.open('https://www.dreamstime.com/Fishmenv_info#res16728500'); ">DREAMSTIME</span>
+<span class="h2" onclick="window.open('https://stock.adobe.com/ru/contributor/206577183/Valdemar%20Fishmen'); ">ADOBE STOCK</span>
+</noindex>
+
+</div>
+  </li>
+
+</ul>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="place" >
+<div  class="placein" id="placein"><h1>FREE PHOTOBANK</h1>
+<div class="torange_big_logo" style="    width: 276px;    height: 58px;    background-size: 100%;    margin: 0px auto;    background-position: center;"></div>
+
+<div data-id='fb1ebc16-d3a2-4c5a-88c2-17b1cf3d76b4' class='sstk_widget' style='
+    position: relative;
+    max-width: 728px;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    overflow: hidden;
+'> <a href="https://submit.shutterstock.com" target="_blank" style="position: absolute; bottom: -1px; right: 1px;"> <img src="https://sstkcbstorage.blob.core.windows.net/content/img/red_grey.png" style="height: 26px;"/> </a><script type='text/javascript'>window._wdata = window._wdata || [];_wdata.push({server_url: 'https://promote.shutterstock.com', widget_id: 'fb1ebc16-d3a2-4c5a-88c2-17b1cf3d76b4', host_url: document.URL,width: 728,height: 90});(function(){if (typeof (alensa_widget) !== 'undefined' ) return;var alensa_js = document.createElement('script'); alensa_js.type = 'text/javascript'; alensa_js.async = true;alensa_js.id = 'alensa_w_script';alensa_js.src = 'https://promote.shutterstock.com/content/embed.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(alensa_js, s);})();</script></div>
+</div>
+<div id="toppages" class="pagination"></div>
+<div class="placemain">
+
+
+
+<div id="divscrollmetag" >
+<ul id="scrollmetag" class="bg"><li class="noselect ani" style="background-color: #4780f3;"><a href="/rock" style="color:#fff">Rock</a></li><li class="noselect ani" style="background-color: #ff0000;"><a href="/constructing" style="color:#fff">Constructing</a></li><li class="noselect ani" style="background-color: #3bc91d;"><a href="/building" style="color:#fff">Building</a></li><li class="noselect ani" style="background-color: #f7b01e;"><a href="/architecture" style="color:#fff">Architecture</a></li><li class="noselect ani" style="background-color: #6c3ce0;"><a href="/texture" style="color:#fff">Texture</a></li><li class="noselect ani" style="background-color: #ff00d4;"><a href="/background" style="color:#fff">Background</a></li><li class="noselect ani" style="background-color: #2e8c1e;"><a href="/nature" style="color:#fff">Nature</a></li></ul>
+<div class="noselect scrollbut1" onclick ="scrolldiv('-','scrollmetag');">&#8678;</div>
+<div class="noselect scrollbut2" onclick ="scrolldiv('+','scrollmetag');">&#8680;</div>
+</div>
+
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+<script type="text/javascript">
+function showModalBig(str) {
+var modal = document.getElementById('Modal');
+ modal.style.display = "block";
+    document.getElementById("cBtn").style.position="fixed";
+    document.getElementById("cBtn").style.top="10px";
+    document.getElementById("cBtn").style.right="10px";
+
+      document.getElementById("liveModal").innerHTML='<img src="'+str+ '" class="bigimg" style="position:relative;"><div style="    position: absolute;    width: 100%;    height: 100%;    z-index: 15;    left: 0;    top: 0;    color: #FFF;    opacity: 1;"></div>';
+}
+
+var croptop=30;
+var cropleft=30;
+var cropheight=60;
+var cropwidth=60;
+var croprot=0;
+var fxlevel1=0;
+var fxlevel1sub=0;
+var prewimg="";
+var fxlevel1submaxarr = {"0":0,"1":0,"2":0,"3":0,"4":42,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0};
+fxlevel1submaxarr[14]=999;
+fxlevel1submaxarr[15]=99;
+
+
+var fxlevel2=0;
+
+var fxlevel3=0;
+var fxlevel3sub=0;
+var fxlevel3submaxarr = {
+"0":0,"1":99,"2":99,"3":99,"4":0,"5":0,"6":0,"7":4,"8":99,"9":39,"10":99,
+"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":99,"20":0,
+"21":99,"22":0,"23":0,"24":0,"25":0,"26":0,"27":0,"28":0,"29":99,"30":99,
+"31":99,"32":99,"33":99,"34":99,"35":99,"36":99,"37":99,"38":99,"39":99,"40":99,
+"41":99,"42":99,"43":99,"44":99,"45":0,"46":0,"47":40,"48":40};
+fxlevel3submaxarr[49]=48000;
+fxlevel3submaxarr[51]=48000;
+fxlevel3submaxarr[50]=190000;
+fxlevel3submaxarr[52]=190000;
+fxlevel3submaxarr[53]=190000;
+fxlevel3submaxarr[54]=190000;
+fxlevel3submaxarr[55]=190000;
+fxlevel3submaxarr[56]=190000;
+fxlevel3submaxarr[57]=190000;
+fxlevel3submaxarr[58]=190000;
+
+
+
+var fxlevel4=0;
+
+var fxlevel6=0;
+var fxlevel6sub=0;
+
+var fxlevel6submaxarr = {
+"0":0,"1":99,"2":99,"3":99,"4":99,"5":99,"6":99,"7":99,"8":99,"9":99,
+"10":99,"11":99,"12":99,"13":99,"14":99,"15":99,"16":99,"17":99,"18":99,"19":99,
+"20":99,"21":99,"22":99,"23":99,"24":99,"25":99,"26":99,"27":99};
+fxlevel6submaxarr[28]=190000;
+fxlevel6submaxarr[29]=190000;
+fxlevel6submaxarr[30]=190000;
+fxlevel6submaxarr[31]=190000;
+fxlevel6submaxarr[32]=190000;
+fxlevel6submaxarr[33]=190000;
+fxlevel6submaxarr[34]=190000;
+fxlevel6submaxarr[35]=190000;
+fxlevel6submaxarr[36]=190000;
+fxlevel6submaxarr[37]=190000;
+fxlevel6submaxarr[38]=190000;
+fxlevel6submaxarr[39]=190000;
+fxlevel6submaxarr[40]=190000;
+fxlevel6submaxarr[41]=190000;
+fxlevel6submaxarr[42]=190000;
+fxlevel6submaxarr[43]=190000;
+fxlevel6submaxarr[44]=190000;
+fxlevel6submaxarr[45]=190000;
+
+
+function showModalCrop(str,urlfx="") {
+var modal = document.getElementById('Modal');
+modal.style.display = "block";
+
+document.getElementById("modalcontentfirst").style.maxWidth="625px";
+document.getElementById("modalcontentfirst").style.minWidth="300px";
+document.getElementById("modalcontentfirst").style.width="100%";
+
+
+
+
+if(urlfx.length>0){
+var urlfxA = urlfx.split("-");
+
+var urlfxA1 = urlfxA[1].split(".");
+if(urlfxA1.length>0){fxlevel1=parseInt(urlfxA1[0]);
+if(urlfxA1.length>1){fxlevel1sub = parseInt(urlfxA1[1]);
+}}
+
+var urlfxA2 = urlfxA[2].split(".");
+if(urlfxA2.length>0){fxlevel2=parseInt(urlfxA2[0]);
+if(urlfxA2.length>1){fxlevel2sub = parseInt(urlfxA2[1]);
+}}
+
+
+var urlfxA3 = urlfxA[3].split(".");
+if(urlfxA3.length>0){fxlevel3=parseInt(urlfxA3[0]);
+if(urlfxA3.length>1){fxlevel3sub = parseInt(urlfxA3[1]);
+}}
+
+var urlfxA4 = urlfxA[4].split(".");
+if(urlfxA4.length>0){fxlevel4=parseInt(urlfxA4[0]);
+if(urlfxA4.length>1){fxlevel4sub = parseInt(urlfxA4[1]);
+}}
+
+
+if(urlfxA.length>5){ croprot = parseInt(urlfxA[5])-90;}else{croprot = 0; cropleft =0; croptop =0;  cropwidth =100; cropheight =100;  }
+
+if(urlfxA.length>6){ cropleft = parseInt(urlfxA[6]);}
+if(urlfxA.length>7){ croptop = parseInt(urlfxA[7]);}
+if(urlfxA.length>8){ cropwidth = parseInt(urlfxA[8])+cropleft;}
+if(urlfxA.length>9){ cropheight = parseInt(urlfxA[9])+croptop;}
+
+//console.log("urlfxA.length="+urlfxA.length +" cropleft= " + cropleft+ "croprot="+croprot);
+
+if(urlfxA.length>10){
+var urlfxA6 = urlfxA[10].split(".");
+if(urlfxA6.length>0){fxlevel6=parseInt(urlfxA6[0]);
+if(urlfxA6.length>1){fxlevel6sub = parseInt(urlfxA6[1]);
+}}}
+
+//console.log(urlfx +"  " + fxlevel1+ "."+fxlevel1sub);
+}
+
+var html=
+//document.getElementById("liveModal").innerHTML='';
+html='<div id="ModalContent" class="noselect"><div id="ModalContentCrop" ><img src="'+str+ '" class="cropimg" id="cropimg" onload="iniCropEdit();">';
+html+='<div id="crop"></div>';
+html+='<input type="range" min="0" max="100" value="30" id="croptop" ontouchstart="OffScroll()" ontouchend="OnScroll()"  oninput="croptop=this.value;moveModalCrop();" onchange="croptop=this.value;loadModalPreview()"  >';
+html+='<input type="range" min="0" max="100" value="30" id="cropleft" ontouchstart="OffScroll()" ontouchend="OnScroll()"  oninput="cropleft=this.value;moveModalCrop();" onchange="cropleft=this.value;loadModalPreview()" >';
+html+='<input type="range" min="0" max="100" value="60" id="cropheight" ontouchstart="OffScroll()" ontouchend="OnScroll()"  oninput="cropheight=this.value;moveModalCrop();" onchange="cropheight=this.value;loadModalPreview()"  >';
+html+='<input type="range" min="0" max="100" value="60" id="cropwidth" ontouchstart="OffScroll()" ontouchend="OnScroll()"   oninput="cropwidth=this.value;moveModalCrop();" onchange="cropwidth=this.value;loadModalPreview()" >';
+html+='<input type="range" min="-90" max="270" value="0" id="croprot" ontouchstart="OffScroll()" ontouchend="OnScroll()"  oninput="croprot=this.value;moveModalCrop();" onchange="croprot=this.value;loadModalPreview()" >';
+html+='</div>';
+
+html+='<div id="previewblock"  ><div id="previewcapt">Effects preview:</div><div id="previewbg"  class="logoimg anirotate" ></div><div id="preview"  style=""></div></div>';
+
+html+='<div id="downloadblock"><button onclick="showModal(\'downloadfx\',prewimg);">Download free image after effects</button>';
+html+='<button id="downloadblockmusthave" onclick="showModal(\'musthave\',prewimg);this.style.display=\'none\';">Must Have!</button></div>';
+
+//html+='<button class="morefx">Add effects</button>';
+
+
+html+='<div id="fxblock">';
+
+html+='<div id="fxdiv1"><label>Toned, sepia, gray, colored</label><input type="number" min="0" max="15" value="0" id="fxinfolevel1"  onchange="fxlevel1=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="15" value="0" id="fxlevel1" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel1=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv1sub" style="display:none;"><label>Adjust toned</label><input type="number" min="0" max="100" value="0" id="fxinfolevel1sub"   onchange="fxlevel1sub=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="100" value="0" id="fxlevel1sub" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel1sub=this.value;loadModalPreview();" ></div>';
+
+
+html+='<div id="fxdiv2"><label>Darker and lighter</label><input type="number" min="0" max="10" value="0" id="fxinfolevel2"   onchange="fxlevel2=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="10" value="0" id="fxlevel2" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel2=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv3"><label>Frames, mosaic  and overlays</label><input type="number" min="0" max="59" value="0" id="fxinfolevel3"  onchange="fxlevel3=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="59" value="0" id="fxlevel3" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel3=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv3sub" style="display:none;"><label>Adjust frames and overlays</label><input type="number" min="0" max="100" value="0" id="fxinfolevel3sub"   onchange="fxlevel3sub=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="100" value="0" id="fxlevel3sub" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel3sub=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv4"><label>Rotate and inverse </label><input type="number" min="0" max="9" value="0" id="fxinfolevel4"  onchange="fxlevel4=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="9" value="0" id="fxlevel4" ontouchstart="OffScroll()" ontouchend="OnScroll()" onchange="fxlevel4=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv6"><label>Prints and overlays </label><input type="number" min="0" max="45" value="0" id="fxinfolevel6"   onchange="fxlevel6=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="45" value="0" id="fxlevel6" ontouchstart="OffScroll()" ontouchend="OnScroll()"  onchange="fxlevel6=this.value;loadModalPreview();" ></div>';
+
+html+='<div id="fxdiv6sub" style="display:none;"><label>Adjust prints and overlays </label><input type="number" min="0" max="100" value="0" id="fxinfolevel6sub"  onchange="fxlevel6sub=this.value;loadModalPreview();">';
+html+='<input type="range" min="0" max="100" value="0" id="fxlevel6sub" ontouchstart="OffScroll()" ontouchend="OnScroll()"   onchange="fxlevel6sub=this.value;loadModalPreview();" ></div>';
+
+
+html+='</div></div>';
+
+document.getElementById("liveModal").innerHTML=html;
+
+iniCropEdit();
+
+document.getElementById("crop").style.display = "block";
+moveModalCrop();
+loadModalPreview();
+//alert(document.getElementById("cropimg").offsetHeight);
+}
+
+function iniCropEdit(){
+document.getElementById("croptop").style.width=document.getElementById("cropimg").offsetHeight+'px';
+document.getElementById("cropleft").style.width=document.getElementById("cropimg").offsetWidth+'px';
+document.getElementById("cropheight").style.width=document.getElementById("cropimg").offsetHeight+'px';
+document.getElementById("cropheight").style.left=document.getElementById("cropimg").offsetWidth+'px';
+document.getElementById("cropwidth").style.width=document.getElementById("cropimg").offsetWidth+'px';
+document.getElementById("cropwidth").style.top=document.getElementById("cropimg").offsetHeight+'px';
+
+document.getElementById("croprot").style.width=document.getElementById("cropimg").offsetHeight+'px';
+document.getElementById("croprot").style.left=document.getElementById("cropimg").offsetWidth+'px';
+}
+
+var previewGLOB=""; 
+
+function loadModalPreview(){
+
+var preview =  document.getElementById('preview');
+var canvas =  document.getElementById('cropimg');
+var crop  = document.getElementById("crop");
+var rotstar=90;
+px = cropleft;
+py = croptop;
+pw = (cropwidth-cropleft);
+ph = (cropheight-croptop);
+pr = (rotstar+parseInt(croprot));
+
+var fxlevel1ready =fxlevel1;
+document.getElementById('fxinfolevel1').value=fxlevel1;
+document.getElementById('fxlevel1').value=fxlevel1;
+
+if(fxlevel1submaxarr[fxlevel1]>0){
+document.getElementById('fxdiv1sub').style.display="block";
+document.getElementById('fxinfolevel1sub').max=fxlevel1submaxarr[fxlevel1];
+document.getElementById('fxlevel1sub').max=fxlevel1submaxarr[fxlevel1];
+document.getElementById('fxinfolevel1sub').value=fxlevel1sub;
+document.getElementById('fxlevel1sub').value=fxlevel1sub;
+if(fxlevel1sub>0){var fxlevel1ready =fxlevel1+"."+fxlevel1sub;}
+}else{document.getElementById('fxdiv1sub').style.display="none";}
+
+
+var fxlevel2ready =fxlevel2;
+document.getElementById('fxinfolevel2').value=fxlevel2;
+document.getElementById('fxlevel2').value=fxlevel2;
+
+var fxlevel3ready =fxlevel3;
+document.getElementById('fxinfolevel3').value=fxlevel3;
+document.getElementById('fxlevel3').value=fxlevel3;
+
+if(fxlevel3submaxarr[fxlevel3]>0){
+document.getElementById('fxdiv3sub').style.display="block";
+document.getElementById('fxinfolevel3sub').max=fxlevel3submaxarr[fxlevel3];
+document.getElementById('fxlevel3sub').max=fxlevel3submaxarr[fxlevel3];
+document.getElementById('fxinfolevel3sub').value=fxlevel3sub;
+document.getElementById('fxlevel3sub').value=fxlevel3sub;
+
+if(fxlevel3sub>0){
+var fxlevel3ready =fxlevel3+"."+fxlevel3sub;
+}
+
+}else{document.getElementById('fxdiv3sub').style.display="none";}
+
+
+var fxlevel4ready =fxlevel4;
+document.getElementById('fxinfolevel4').value=fxlevel4;
+document.getElementById('fxlevel4').value=fxlevel4;
+
+document.getElementById('croprot').value=croprot;
+document.getElementById('cropleft').value=cropleft;
+document.getElementById('croptop').value=croptop;
+document.getElementById('cropwidth').value=cropwidth;
+document.getElementById('cropheight').value=cropheight;
+
+
+var fxlevel6ready =fxlevel6;
+document.getElementById('fxinfolevel6').value=fxlevel6;
+document.getElementById('fxlevel6').value=fxlevel6;
+
+if(fxlevel6submaxarr[fxlevel6]>0){
+document.getElementById('fxdiv6sub').style.display="block";
+document.getElementById('fxinfolevel6sub').max=fxlevel6submaxarr[fxlevel6];
+document.getElementById('fxlevel6sub').max=fxlevel6submaxarr[fxlevel6];
+document.getElementById('fxinfolevel6sub').value=fxlevel6sub;
+document.getElementById('fxlevel6sub').value=fxlevel6sub;
+
+if(fxlevel6sub>0){
+var fxlevel6ready =fxlevel6+"."+fxlevel6sub;
+}
+
+}else{document.getElementById('fxdiv6sub').style.display="none";}
+
+
+
+//if(pr<0){pr=Math.abs(pr)+180;}
+
+//console.log('pr='+pr+'w='+pw);
+
+prewimg= "https://fx.torange.biz/23750-FX-3-0-"+fxlevel1ready+"-"+fxlevel2ready+"-"+fxlevel3ready+"-"+fxlevel4ready+"-"+pr+"-"+px+"-"+py+"-"+pw+"-"+ph+"-"+fxlevel6ready+".jpg";
+//console.log('prewimg='+prewimg+'w='+pw);
+
+preview.style.backgroundImage = "url('"+prewimg+"')";
+document.getElementById('downloadblockmusthave').style.display="inline-block";
+
+
+
+
+previewGLOB=prewimg;
+}
+
+function OffScroll() {
+//console.log('offcroll');
+document.getElementById("modalcontentfirst").style.overflow="hidden";
+document.getElementById("body").style.overflow="hidden";
+}
+
+function OnScroll() {
+//console.log('oncroll');
+document.getElementById("modalcontentfirst").style.overflow="auto";
+document.getElementById("body").style.overflow="auto";
+}
+
+function moveModalCrop() {
+var canvas =  document.getElementById('cropimg');
+var crop  = document.getElementById("crop");
+px = (parseInt(canvas.offsetWidth)/100)*cropleft;
+py = (parseInt(canvas.offsetHeight)/100)*croptop;
+pw = (parseInt(canvas.offsetWidth)/100)*(cropwidth-cropleft);
+ph = (parseInt((canvas.offsetHeight))/100)*(cropheight-croptop);
+pr = croprot;
+
+//console.log('pr='+pr+'w='+pw);
+
+
+crop.style.top=py+'px';
+crop.style.left=px+'px';
+crop.style.width=pw+'px';
+crop.style.height=ph+'px';
+crop.style.transform='rotateZ('+pr+'deg)';
+
+}
+
+
+function startDownloadFX(urlfx,zag=""){
+    var size =  document.getElementById('sizeDownload').value;
+    var link = document.createElement("a");
+    link.setAttribute('download',  zag+'image from torange_biz free photobank') ;
+    var res = urlfx.replace("/size/", "/"+size+"/");
+    link.href = res;
+    link.style.display = 'block';
+    document.body.appendChild(link);
+//alert(link.href);
+    link.click();
+}
+
+function startDownloadORIG(url,zag=""){
+    var size =  document.getElementById('sizeDownload').value;
+    var link = document.createElement("a");
+    link.setAttribute('download',  zag+'image from torange_biz free photobank') ;
+    var res = url.replace("/size/", "/"+size+"/");
+    link.href = res;
+    link.style.display = 'block';
+    document.body.appendChild(link);
+//alert(link.href);
+    link.click();
+}
+
+
+
+</script>
+
+
+<div  class="mainplace">
+
+<div id="mainflex">
+
+<div id="mainimgdiv"  itemscope itemtype="https://schema.org/Photograph" >
+<div style="position:relative;width:100%"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  
+<!-- torange_adaptiv --> 
+<ins class="adsbygoogle" 
+style="display:block" 
+data-ad-client="ca-pub-2670311293533312" 
+data-ad-slot="9866138854" 
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script> 
+</div>
+<div style="position:relative;width:100%;margin-top:15px;">
+<img src="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg" data-width="5184" data-height="3456" border="0" alt="Texture of stone wall. №23750" class="mainimg" itemprop="image"   id="mainphoto"  oncontextmenu="CountDownloads();"   />
+<div class="overlay">
+<h5 class="description">Texture of stone wall.</h5>
+<div class="btnline">
+<a href="https://torange.biz/photo/23/HD/rock-textures-brickwork-texture-stone-wall-23750.jpg"  onclick="showModalBig('https://torange.biz/photo/23/HD/rock-textures-brickwork-texture-stone-wall-23750.jpg'); return false;" class="btn_big ani"  title="Click to zoom in and view the picture  "></a>
+<a href="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg"  onclick="showModalCrop('https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg','0-13-2-8-1'); return false;"  class="btn_cut ani"  title="Take advantage of our new system, add effects to photos. Now it is very easy to do in this image: black and white, vintage retro photo, background for greeting or congratulations, illustration for your blog or forum in white or dark antique frame, and to enhance the color or add a sepia tone. Also running in test mode (does not work in the mobile versions) simple service cropping images. After adding effects, you can trim the resulting image and get ready for a texture or a cover page in social networks. We tried to make as easy and quick our service."></a>
+<a href="https://torange.biz/photo/23/HD/rock-textures-brickwork-texture-stone-wall-23750.jpg" onclick="showModal('downloadorig','23750'); return false;" class="btn_dwn ani"  title="Download free image Texture of stone wall."></a>
+<a href="https://torange.biz/texture-stone-wall-23750" onclick="showModal('morefx','23750'); return false;"  class="btn_edt ani"  title="Add effects"></a>
+<a href="https://torange.biz/texture-stone-wall-23750" onclick="showModal('shareorig','23750'); return false;" class="btn_shr ani"  title="Share this picture in social networks. Your every Like and Repost our photos, this is the best THANKS for our work."></a>
+</div>
+
+<a href="https://torange.biz/photo/23/HD/rock-textures-brickwork-texture-stone-wall-23750.jpg" id="HD_download_button" download="Free Photobank tOrange Texture of stone wall " onclick="showModal('downloadorig','23750'); return false;" >Download free image Texture of stone wall. in HD wallpaper size 1920px </a>
+
+</div>
+</div>
+
+<meta itemprop="license" content="https://creativecommons.org/licenses/by/4.0/" />
+<div  style="position:relative;" itemscope itemtype="https://schema.org/Organization" >
+<meta itemprop="name" content="Free photobank torange.biz" />
+<meta itemprop="email" content="info@torange.biz" />
+<meta itemprop="url" content="https://torange.biz" />
+</div>
+<meta itemprop="Author" content="https://torange.biz" />
+<meta itemprop="datePublished" content="2013-10-23">
+<meta itemprop="keywords" content="Rock, Constructing, Building, Architecture, Texture, Background, Nature, torange, torange.biz">
+<meta itemprop="url" content="https://torange.biz/texture-stone-wall-23750" />
+<meta itemprop="text" content="Texture of stone wall.">
+
+ 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  
+<!-- torange_adaptiv --> 
+<ins class="adsbygoogle" 
+style="display:block" 
+data-ad-client="ca-pub-2670311293533312" 
+data-ad-slot="9866138854" 
+data-ad-format="auto" 
+data-full-width-responsive="true"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script> 
+
+
+</div>
+
+<div id="rightcontent">
+<div class="h2"><!--warn_text--></div>
+
+
+<span></span>
+
+<span>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- torange_biz_01_10_2018 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-2670311293533312"
+     data-ad-slot="2817543029"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+
+
+<div id="down" onclick="showModal('downloadorig','23750'); return false;">Download free image <br>License CC-BY 4.0</div>
+<div class="divL" id="links" style="display:none"  ></div>
+<span>
+
+<div xmlns:cc="https://creativecommons.org/ns#" xmlns:dct="https://purl.org/dc/terms/" about="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg">
+<span property="dct:title">Free image Texture of stone wall.</span> 
+(<a rel="cc:attributionName" property="cc:attributionName" href="https://torange.biz">Free photobank torange.biz</a>) / ©<span itemprop="author" >torange.biz</span>
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/" about="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg" style="float:left;border:2px #ffffff solid; ">
+<img alt="Creative Commons License" style="border-width:0;" src="data:image/gif;base64,R0lGODlhMQAfAJEDAKuxqv///wAAAP///yH5BAEAAAMALAAAAAAxAB8AAALxjI6py+03Dpi02ouzRrr7b0kbA05LJl5PinJAogqxWymtEOQ6bco1pwsGXrweYIfLEX+/g/BpKEqQQZbVCX3ysNlc6jvtCmncYdjrWxrFT/XriCy/jcSkOVyHR32yKiI4p4Z3YqMkIncWRXHYt2dW92jIZ4c2lsYIl5gouUhZdrWm6Ken43bG5SbY+PfG2pj6Z5lGNwhTVxviYssEKfkKhDbbuZvbScp2V9IyjOwnrEzXQylWBC3ddKxFtsI93Ni2yy0+SywNlkD11+3d0ITuBL+3knvijh6MM159wxDlqF+OnoM4+QAaPLhAHsKFCQYUAAA7" />
+</a>
+This work is licensed under a  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+For internet website the hyperlink on <a rel="cc:attributionURL" property="cc:attributionURL" href="https://torange.biz">torange.biz</a> necessarily. Rights beyond the scope of this license are available at: <a
+ rel="cc:morePermissions"  
+property="cc:morePermissions" 
+href="/Rules.html" >/Rules.html</a>.
+</div>
+
+<!--
+<rdf:RDF xmlns="https://web.resource.org/cc/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="https://torange.biz/photo/23/IMAGE/rock-textures-brickwork-texture-stone-wall-23750.jpg"><license rdf:resource="https://creativecommons.org/licenses/by/4.0/" /><dc:type rdf:resource="https://purl.org/dc/dcmitype/StillImage" /><dc:title>Texture of stone wall.</dc:title></Work>
+<License rdf:about="https://creativecommons.org/licenses/by/4.0/"><permits rdf:resource="https://web.resource.org/cc/Reproduction"/><permits rdf:resource="https://web.resource.org/cc/Distribution"/><requires rdf:resource="https://web.resource.org/cc/Notice"/><requires rdf:resource="https://web.resource.org/cc/Attribution"/><permits rdf:resource="https://web.resource.org/cc/DerivativeWorks"/></License>
+</rdf:RDF> 
+-->
+</span>
+
+
+
+<div class="divL" > Photo available in the albums: 
+<div style="height: 315px;  overflow-y: hidden; position: relative; text-align: center;">
+<ul id="scrollmealbums" class="bg">
+
+<li class="noselect">
+<a href="/gallery/textures-brickwork" style="display:inline">
+<img src="/image/textures-brickwork.jpg" style="height:300px;" >
+<div id="span_alt_" style="
+background-color: #ffffff73;     white-space: normal;  position: absolute;    top: -280px;  height:25px;  left: 5px;
+padding-top: 4px; padding-left: 4px; padding-right: 4px; color:#1f1607; ">Textures brickwork (81)</div>
+</a>
+</li>
+
+<li class="noselect">
+<a href="/gallery/textures-masonry" style="display:inline">
+<img src="/image/textures-masonry.jpg" style="height:300px;" >
+<div id="span_alt_" style="
+background-color: #ffffff73;     white-space: normal;  position: absolute;    top: -280px;  height:25px;  left: 5px;
+padding-top: 4px; padding-left: 4px; padding-right: 4px; color:#1f1607; ">Textures masonry (89)</div>
+</a>
+</li>
+
+<li class="noselect">
+<a href="/gallery/stone-texture" style="display:inline">
+<img src="/image/stone-texture.jpg" style="height:300px;" >
+<div id="span_alt_" style="
+background-color: #ffffff73;     white-space: normal;  position: absolute;    top: -280px;  height:25px;  left: 5px;
+padding-top: 4px; padding-left: 4px; padding-right: 4px; color:#1f1607; ">Stone texture (99)</div>
+</a>
+</li>
+
+<li class="noselect">
+<a href="/gallery/wall-textures" style="display:inline">
+<img src="/image/wall-textures.jpg" style="height:300px;" >
+<div id="span_alt_" style="
+background-color: #ffffff73;     white-space: normal;  position: absolute;    top: -280px;  height:25px;  left: 5px;
+padding-top: 4px; padding-left: 4px; padding-right: 4px; color:#1f1607; ">Wall textures (116)</div>
+</a>
+</li>
+
+</ul>
+<div class="noselect scrollbut1" style="top: 119px;    left: 23px;" onclick ="scrolldiv('-','scrollmealbums');">&#8678;</div>
+<div class="noselect scrollbut2" style="top: 119px;    right: 16px;" onclick ="scrolldiv('+','scrollmealbums');">&#8680;</div>
+</div>
+ </div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+if('1'=='0'){document.getElementById('down' ).style.display="none";}
+
+
+
+</script>
+<div  class="mainplacebot">
+</div>
+
+<div id="twoadv"><!--special_word2_102-->
+
+</div>
+
+
+<br style="clear:both;" />
+<div  class="mainplacebot" style="min-height:50px;position:relative;">
+<div> <b> Prepared effects for photos: To access the functions of cropping, image editing, and more effected images - authorize and agree to the terms of use of images. </b></div> 
+<ul id="gallery">
+
+<li  data-width="1920" data-height="1280" data-page="" data-onpage="" ><div class="iwrap"><img src="https://torange.biz/photofx/18/5/monochrome-texture-stone-wall-18589.jpg"  alt="The effect of light. The effect of sepia toned. "></div>
+<div class="overlay" ><a href="https://torange.biz/fx/monochrome-texture-stone-wall-18589" ><div class="description">Monochrome. Texture of stone wall..</div></a>
+<div class="bline">
+    <div >#18589 </div>
+</div>
+</div>
+</li>
+
+<li  data-width="1920" data-height="1280" data-page="" data-onpage="" ><div class="iwrap"><img src="https://torange.biz/photofx/18/5/best-image-texture-stone-wall-18590.jpg"  alt="Pattern Heart. "></div>
+<div class="overlay" ><a href="https://torange.biz/fx/best-image-texture-stone-18590" ><div class="description">The best image. Texture of stone wall..</div></a>
+<div class="bline">
+    <div >#18590 </div>
+</div>
+</div>
+</li>
+
+<li  data-width="1920" data-height="503" data-page="" data-onpage="" ><div class="iwrap"><img src="https://torange.biz/photofx/18/5/cover-texture-stone-wall-18591.jpg"  alt="The effect of hard light. Very Vivid Colours. Fragment. "></div>
+<div class="overlay" ><a href="https://torange.biz/fx/cover-texture-stone-wall-18591" ><div class="description">Cover. Texture of stone wall..</div></a>
+<div class="bline">
+    <div >#18591 </div>
+</div>
+</div>
+</li>
+
+<li  data-width="1920" data-height="1280" data-page="" data-onpage="" ><div class="iwrap"><img src="https://torange.biz/photofx/189/5/layout-banner-design-responsive-business-brochure-template-infographic-stone-189424.jpg"  alt=""></div>
+<div class="overlay" ><a href="https://torange.biz/fx/layout-banner-design-responsive-business-brochure-template-infographic-stone-189424" ><div class="description">Texture of stone wall. powerpoint website infographic template banner layout design responsive brochure business</div></a>
+<div class="bline">
+    <div >#189424 </div>
+</div>
+</div>
+</li>
+
+<li  data-width="1920" data-height="1280" data-page="" data-onpage="" ><div class="iwrap"><img src="https://torange.biz/photofx/189/5/layout-banner-design-responsive-business-brochure-template-infographic-texture-189425.jpg"  alt="The effect of light. The effect of sepia toned. "></div>
+<div class="overlay" ><a href="https://torange.biz/fx/layout-banner-design-responsive-business-brochure-template-infographic-texture-189425" ><div class="description"> Monochrome. Texture of stone wall.. powerpoint website infographic template banner layout design responsive brochure business</div></a>
+<div class="bline">
+    <div >#189425 </div>
+</div>
+</div>
+</li>
+
+</ul data-id="gallery">
+</div>
+
+
+<div class="mainplacebot"  > <!--links_tags2--> </div>
+
+<br />
+
+
+
+<script type="text/javascript">
+<!--
+var idorig="23750";
+//-->
+
+
+function resizegal()
+{
+var f=document.getElementById("gallery");
+var e = f.querySelectorAll('li');
+var gw=f.offsetWidth;
+var h=Number('180');
+var line=0;var linec=0;var linea=[];var linewa=[];var lineha=[];var linepa=[];
+for (var n = 0;  n < e.length; n++) {
+var w=e[n].dataset.width;
+var h=e[n].dataset.height;
+if(h>0){var a=w/h;}else{a=1.2;}
+a=a.toFixed(1);
+e[n].dataset.prop=a;
+h=Number('180');
+w=h*a;
+b=4;
+var lentest=line+w;
+if(lentest <= gw ){
+line=line+w;linec++;
+linea[linec]=e[n];
+linepa[linec]=w/(gw/100);
+linewa[linec]=w;
+}
+
+if( n == e.length-1 &&  lentest > gw){
+var th= h;
+var tw= h/a ;tw=tw.toFixed(1);
+//console.log('tw='+tw+'th='+th);
+e[n].style.width=tw+'px';
+e[n].style.height=th +'px';
+}
+    
+if(lentest > gw  ||  n == e.length-1 ){
+var lineprop=line/h;
+var inline=linepa.length-1;
+var bordersum=inline*b*2;
+var lineNp =  100-line/((gw-bordersum)/100); var lineNp=lineNp.toFixed(1);
+line=Number('0');
+if( n == e.length-1){var lineNp = 1;}
+for (var m = 1;  m <= inline; m++) {
+var addpixels =(linewa[m]/100)*lineNp; addpixels =+Math.floor(addpixels);
+var tw= linewa[m]+addpixels; tw=tw.toFixed(1);
+var th= h+((h/100)*lineNp); th=th.toFixed(1);
+linewa[m]=tw;
+lineha[m]=th;
+line=line+Number(tw);
+var curprop = tw/ th;
+curprop=curprop.toFixed(1);
+linea[m].style.width=tw+'px';
+linea[m].style.height=th +'px';
+}
+var lineNp =  100-line/((gw-bordersum)/100); var lineNp=lineNp.toFixed(1);
+line=Number('0');
+if( n == e.length-1){var lineNp = 1;}
+for (var m = 1;  m <= inline; m++) {
+var addpixels =(linewa[m]/100)*lineNp; addpixels =+Math.floor(addpixels);
+var curprop = linewa[m]/lineha[m];
+curprop=curprop.toFixed(1);
+var tw= +linewa[m]+addpixels; tw=tw.toFixed(1);
+var th= +lineha[m]+(addpixels/curprop); th=th.toFixed(1);
+linea[m].style.width=tw+'px';
+linea[m].style.height=th +'px';
+}
+
+
+line = w;linec=1;
+var linepa=[];var linea=[];var linewa=[];
+linea[linec]=e[n];
+linepa[linec]=w/(gw/100);
+linewa[linec]=w;
+}
+}
+//moveanker();
+}
+
+
+
+
+
+resizegal();
+</script>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="footerline">
+<a href="/" class="logoimg botlogo" ></a>
+<div>©tOrange.biz 2004-2018 All The Photos Copyrighted on CC-BY 4.0 Used only with hyperlink on https://torange.biz <a href="/Rules.html" >Rules</a><a href="Contacts.html" >Contacts</a><a href="Comments.html" >Comments</a><span><select id="lang" onchange="top.location=this.value"><option value="" selected >language: </option><option value="https://torange.biz/ru/texture-stone-wall-23750" >Русский</option><option value="https://torange.biz/texture-stone-wall-23750" >English</option><option value="https://torange.biz/de/texture-stone-wall-23750" >Deutsch</option><option value="https://torange.biz/fr/texture-stone-wall-23750" >Français</option><option value="https://torange.biz/it/texture-stone-wall-23750" >Italiano</option><option value="https://torange.biz/es/texture-stone-wall-23750" >Español</option><option value="https://torange.biz/pt/texture-stone-wall-23750" >Português</option><option value="https://torange.biz/cn/texture-stone-wall-23750" >中国</option><option value="https://torange.biz/jp/texture-stone-wall-23750" >日本人</option><option value="https://torange.biz/ua/texture-stone-wall-23750" >Українська</option></select> </div>
+<!--bot_menu-->
+<a href="https://www.facebook.com/tOrange.biz" target="_blank" rel="nofollow" class="fb botsocimg"></a>
+<a href="https://plus.google.com/+TorangeBiz/" target="_blank"  rel="publisher"  rel="nofollow" class="gp botsocimg"></a>
+<a href="https://twitter.com/tOrangeBIZ" target="_blank"  rel="nofollow"  class="tw botsocimg"></a>
+<a href="https://www.pinterest.com/torangebiz/" target="_blank"  rel="nofollow"  class="pt botsocimg"></a>
+<a href="https://torange-biz.blogspot.com/" target="_blank"  rel="nofollow"  class="bs botsocimg"></a>
+
+<a href="#" target="_blank"  rel="nofollow" onclick="showModal('social');return false;" id="hidebotsocimg" >
+<span  class="gp hidebotsocimg"></span>
+<span  class="fb hidebotsocimg"></span>
+<span  class="tw hidebotsocimg"></span>
+<span  class="pt hidebotsocimg"></span>
+</a>
+</div>
+
+<br style="clear:both;" />
+ </div>
+ </div>
+
+<div id="Modal" class="modal">
+  <div class="modal-content" id="modalcontentfirst">
+    <button class="cBtn"  id="cBtn" onclick="document.getElementById('Modal').style.display='none';"> </button>
+    <div id="liveModal"><div class="logoimg anirotate" style="width:50px;height:50px;"></div></div>
+  </div>
+
+</div>
+
+
+<img src="/counter.php" width="1" />
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74050012-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script type="text/javascript">
+var head = document.getElementsByTagName("head")[0];
+var rand = Math.random();
+script=document.createElement('script');
+script.type='text/javascript';
+script.src='/lchat.php?r='+rand+'&ref='+document.referrer+'&t='+ document.title;
+head.appendChild(script);
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2670311293533312",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+
+</body>
+</html>
