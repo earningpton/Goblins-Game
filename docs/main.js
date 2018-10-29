@@ -3589,7 +3589,7 @@ if (dismantle >= 7) {
     }
 
     if (endTimer6>=800 && milestoneFlag == 18) {
-        displayMessage("'No More Magic' by Horror Pen");
+        displayMessage("'No More Magic' by Horror Pen and Every other musics in the game by Matthew Pablo");
         milestoneFlag++;
     }
 
