@@ -19,7 +19,9 @@ function playThrenody(){
 // Other Sound Function ---------------------------------------------------------
 
 function playSound () {
-    document.getElementById('play').play();
+    const origAudio = document.getElementById('play');
+    const newAudio = origAudio.cloneNode()
+    newAudio.play();
 }
 
 
