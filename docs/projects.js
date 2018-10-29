@@ -1247,7 +1247,7 @@ var project60 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "A100";
+        el.textContent = "Archer";
         el.value = 1;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton60");
@@ -1279,7 +1279,7 @@ var project61 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "B100";
+        el.textContent = "Barbarian";
         el.value = 2;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton61");
@@ -1310,7 +1310,7 @@ var project62 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "GREEDY";
+        el.textContent = "Thief";
         el.value = 3;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton62");
@@ -1341,7 +1341,7 @@ var project63 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "GENEROUS";
+        el.textContent = "Healer";
         el.value = 4;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton63");
@@ -1372,7 +1372,7 @@ var project64 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "MINIMAX";
+        el.textContent = "Assassin";
         el.value = 5;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton64");
@@ -1403,7 +1403,7 @@ var project65 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "TIT FOR TAT";
+        el.textContent = "Mimic";
         el.value = 6;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton65");
@@ -1434,7 +1434,7 @@ var project66 = {
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
         var el = document.createElement("option");
-        el.textContent = "BEAT LAST";
+        el.textContent = "Slowpoke";
         el.value = 7;
         stratList.appendChild(el);
         var element = document.getElementById("projectButton66");

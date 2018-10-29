@@ -159,7 +159,7 @@ function qComp(){
 
 
     if (qChips[0].active == 0){
-        document.getElementById("qCompDisplay").innerHTML = "Need Photonic Chips";
+        document.getElementById("qCompDisplay").innerHTML = "Need Offering";
     } else {
     for (var i = 0; i<qChips.length; i++){
         q = q+qChips[i].value;
@@ -177,7 +177,7 @@ function qComp(){
             }
 
         standardOps = standardOps + qq;
-        document.getElementById("qCompDisplay").innerHTML = "qOps: " + Math.ceil(q*360).toLocaleString();
+        document.getElementById("qCompDisplay").innerHTML = "mana: " + Math.ceil(q*360).toLocaleString();
     }
 
 }
@@ -263,7 +263,7 @@ function longBlink(elemID){
         }
 
      if (longBlinkCounter > 55){
-        document.getElementById("hypnoDroneText").innerHTML="Kill<br/>the<br/>Wizard<br/>Drones";
+        document.getElementById("hypnoDroneText").innerHTML="Kill<br/>the<br/>Wizard<br/>";
         }
 
     if (longBlinkCounter >= 120){
@@ -283,7 +283,7 @@ function longBlink(elemID){
     }
 
 function hypnoDroneEvent(){
-    document.getElementById("hypnoDroneText").innerHTML="Release";
+    document.getElementById("hypnoDroneText").innerHTML="Unlease";
     longBlink("hypnoDroneEventDiv");
 }
 
@@ -338,15 +338,15 @@ function buttonUpdate(){
     }
 
 
-    document.getElementById("factoryRebootToolTip").innerHTML = "+"+numberCruncher(factoryBill)+" clips";
+    document.getElementById("factoryRebootToolTip").innerHTML = "+"+numberCruncher(factoryBill)+" hearts";
 
-    document.getElementById("harvesterRebootToolTip").innerHTML = "+"+numberCruncher(harvesterBill)+" clips";
+    document.getElementById("harvesterRebootToolTip").innerHTML = "+"+numberCruncher(harvesterBill)+" hearts";
 
-    document.getElementById("wireDroneRebootToolTip").innerHTML = "+"+numberCruncher(wireDroneBill)+" clips";
+    document.getElementById("wireDroneRebootToolTip").innerHTML = "+"+numberCruncher(wireDroneBill)+" hearts";
 
-    document.getElementById("farmRebootToolTip").innerHTML = "+"+numberCruncher(farmBill)+" clips";
+    document.getElementById("farmRebootToolTip").innerHTML = "+"+numberCruncher(farmBill)+" hearts";
 
-    document.getElementById("batteryRebootToolTip").innerHTML = "+"+numberCruncher(batteryBill)+" clips";
+    document.getElementById("batteryRebootToolTip").innerHTML = "+"+numberCruncher(batteryBill)+" hearts";
 
 
     if (swarmFlag == 1){
@@ -1314,10 +1314,10 @@ function newTourney(){
 
     document.getElementById("btnRunTournament").disabled = false;
 
-    document.getElementById("vertStrat").innerHTML = "&nbsp";
-    document.getElementById("horizStrat").innerHTML = "&nbsp";
+    document.getElementById("vertStrat").innerHTML = "A";
+    document.getElementById("horizStrat").innerHTML = "B";
 
-    document.getElementById("tourneyDisplay").innerHTML = "Pick strategy, run tournament, gain yomi";
+    document.getElementById("tourneyDisplay").innerHTML = "Pick main adventurer, run gobline slaying competition, gain karma";
 
 
 }
@@ -2403,9 +2403,9 @@ function lowerPrice(){
 function updateStats(){
 
     if (wire == 1){
-        document.getElementById("inchSpan").innerHTML = "inch";
+        document.getElementById("inchSpan").innerHTML = "goblin";
     } else {
-        document.getElementById("inchSpan").innerHTML = "inches";
+        document.getElementById("inchSpan").innerHTML = "goblins";
     }
 
 
