@@ -735,19 +735,19 @@ p.hypnoDrone {
    background: -ms-linear-gradient(top, #ffffff, #888888);
    background: -o-linear-gradient(top, #ffffff, #888888);
    background-image: -ms-linear-gradient(top, #ffffff 0%, #888888 100%);*/
-   border-radius: 1px;
+   border-radius: 2px;
    background: url("swords.gif"), url("wood.gif");
    background-position: left top,left top;
    background-repeat: no-repeat, repeat;
    padding: 2px 4px;
-   -webkit-border-radius: 2px;
+   /*-webkit-border-radius: 2px;
    -moz-border-radius: 2px;
    border-radius: 2px;
    -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    text-shadow: #cccccc 0 1px 0;
-   color: #000000;
+   color: #000000;*/
    font-size: 11px;
    font-family: helvetica, serif;
    text-decoration: none;
