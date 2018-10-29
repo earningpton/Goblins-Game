@@ -18,7 +18,7 @@ function playThrenody(){
 }
 // Other Sound Function ---------------------------------------------------------
 
-function playSound () {
+function playSound() {
     document.getElementById('play').play();
 }
 
