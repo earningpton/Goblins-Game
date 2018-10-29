@@ -48,8 +48,8 @@
         </div>
 
         <div id="leftColumn">
-        <audio id="play" src="slash.mp3"></audio>
-        <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1)">Kill One Goblin</button><br />
+        <audio id="play" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+        <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1);playSound();">Kill One Goblin</button><br />
         <br />
 
         <div id = "creationDiv">
@@ -293,8 +293,7 @@
         </div>
 
         <br />
-        <button id ="loadThrenody" onclick="cheatClips()">Free Clips</button><br />
-        <button id ="playThrenody" onclick="cheatClips()">Free Clips</button><br />
+        <button id ="save1Button" onclick="loadThrenody();threnodyLoaded();playThrenody();">DEBUG</button>
         <!--
 
 

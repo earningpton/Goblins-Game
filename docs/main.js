@@ -18,19 +18,10 @@ function playThrenody(){
 }
 // Other Sound Function ---------------------------------------------------------
 
-function playSound() {
+function playSound () {
     document.getElementById('play').play();
 }
 
-function loadThrenody2(){
-    threnodyAudio.src = "nomoremagic.mp3";
-
-}
-
-function playThrenody2(){
-
-        threnodyAudio.play();
-}
 
 // Wire --------------------------------------------------------
 
