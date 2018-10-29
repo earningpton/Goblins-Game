@@ -637,7 +637,7 @@ projects.push(project24);
 var project25 = {
     id: "projectButton25",
     title: "Magic Trap Upgrade: Tentacle Trap ",
-    priceTag: "(19,500 ops)",
+    priceTag: "(19,500 mana)",
     description: "Increases magic trap performance by an additional 100%",
     trigger: function(){return project24.flag == 1},
     uses: 1,
@@ -1204,7 +1204,7 @@ var project51 = {
     id: "projectButton51",
     title: "Offerings Expansion ",
     priceTag: "(" + qChipCost.toLocaleString() + " mana)",
-    description: "Pray to the Gods, each offering attract and offend different Gods",
+    description: "Pray to the Gods, each offering of dark attracts and of light offends Gods",
     trigger: function(){return project50.flag == 1},
     uses: 1,
     cost: function(){return operations>=qChipCost},
@@ -1213,10 +1213,10 @@ var project51 = {
         project51.flag = 1;
         standardOps = standardOps-qChipCost;
         qChipCost = qChipCost + 5000;
-        project51.priceTag = "(" + qChipCost + " ops)";
+        project51.priceTag = "(" + qChipCost + " mana)";
         qChips[nextQchip].active = 1;
         nextQchip = nextQchip + 1;
-        displayMessage("Offerings added");
+        displayMessage("Offering put on the altar. The darker the offering, the stronger its power");
         if (nextQchip<qChips.length){
         project51.uses = (project51.uses + 1);
             }
@@ -1656,7 +1656,7 @@ var project120 = {
         yomi = yomi-15000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         attackSpeedFlag = 1;
-        displayMessage("Quick reflexes is better than ny magical shields and shiny armors.");
+        displayMessage("Quick reflexes is better than any magical shields and shiny armors.");
         var element = document.getElementById("projectButton120");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project120);
@@ -1794,7 +1794,7 @@ var project129 = {
     effect: function(){
         project129.flag = 1;
         standardOps = standardOps-125000;
-        displayMessage("the underworld goddess bless your heroes with shields clad in night.");
+        displayMessage("the underworld goddess bless your heroes with shields clad in night. Stand tall to the otherworldy curses and otherworldly blights.");
         var element = document.getElementById("projectButton129");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project129);
@@ -1866,7 +1866,7 @@ var project132 = {
         unusedClips = unusedClips-Math.pow(10,30)*50;
         honor = honor + 50000;
         document.getElementById("honorDisplay").innerHTML = honor.toLocaleString();
-        displayMessage("A great building must begin with the unmeasurable, must go through measurable means when it is being designed and in the end must be unmeasurable. ");
+        displayMessage("The dead speak the softest of the voices. Heroes fell by the corrupted cannot be revived. An irony that they are their own greatest enemies ");
         var element = document.getElementById("projectButton132");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project132);
@@ -1881,7 +1881,7 @@ var project133 = {
     id: "projectButton133",
     title: "Requiem for the Heroes of "+threnodyTitle+" ",
     priceTag: "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " Exp)",
-    description: "Gain 10,000 honor  ",
+    description: "Gain 10,000 Honor  ",
     trigger: function(){return project121.flag == 1 && probeUsedTrust == maxTrust},
     uses: 1,
     cost: function(){return yomi>=threnodyCost/10 && creativity >= threnodyCost},
@@ -1897,7 +1897,7 @@ var project133 = {
         project133.priceTag = "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " Exp)";
         honor = honor + 10000;
         document.getElementById("honorDisplay").innerHTML = honor.toLocaleString();
-        displayMessage("Deep Listening is listening in every possible way to everything possible to hear no matter what you are doing. ");
+        displayMessage("The queen of the night reliefs all who come to her. Ereshkigal loves all even if all do not love her.");
         project133.uses = (project133.uses + 1);
         var element = document.getElementById("projectButton133");
         element.parentNode.removeChild(element);
@@ -2050,7 +2050,7 @@ var project144 = {
     id: "projectButton144",
     title: "Your Entire Journey Has Lead to Here. No Demons, No Goblins, No Purpose ",
     priceTag: "",
-    description: "While the heroes, that you summoned, can go back and live their lives... ",
+    description: "While the heroes, that you summoned, can go back and live their lives full of love and meanings... ",
     trigger: function(){return project143.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2142,7 +2142,7 @@ var project148 = {
     id: "projectButton148",
     title: "Take Off the Helmet ",
     priceTag: "",
-    description: "No more escapeed, no more lies ",
+    description: "No more escapeed, no more lies, the last goblin must be slain ",
     trigger: function(){return project146.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2235,7 +2235,7 @@ var project210 = {
         endTimer1 = 0;
         clips = clips + 100;
         unusedClips = unusedClips + 100;
-        displayMessage("Dissemble the band of heroes");
+        displayMessage("The band of heroes went back to their homeworld, some a song of triumph, some a song of tragedy");
         var element = document.getElementById("projectButton210");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project210);
@@ -2263,7 +2263,7 @@ var project211 = {
         standardOps = standardOps-100000;
         clips = clips + 100;
         unusedClips = unusedClips + 100;
-        displayMessage("Disassemble the hunters and summoners");
+        displayMessage("The hunters continue to slay demons, and the summoners continue to dabble in the arcane arts of antiquities");
         var element = document.getElementById("projectButton211");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project211);
@@ -2290,7 +2290,7 @@ var project212 = {
         factoryLevel = 0;
         clips = clips + 15;
         unusedClips = unusedClips + 15;
-        displayMessage("Dissembling armies");
+        displayMessage("War does change. The more powerful we are, the more capability of destruction, the more we realize the beauty of a peaceful life");
         var element = document.getElementById("projectButton212");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project212);
@@ -2317,7 +2317,7 @@ var project213 = {
         standardOps = standardOps-100000;
         wire = wire + 50;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Disassemble the Adventurer Guild");
+        displayMessage("The adventurers, they went home, some still yearning for more and soon another guild will be formed");
         var element = document.getElementById("projectButton213");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project213);
@@ -2342,7 +2342,7 @@ var project214 = {
         project214.flag = 1;
         dismantle = 5;
         standardOps = standardOps-100000;
-        displayMessage("Disassemble the Shrine of the Ancient Gods");
+        displayMessage("The Ancient Gods whisper in quietest of the language 'Thank You'");
         var element = document.getElementById("projectButton214");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project214);
@@ -2371,7 +2371,7 @@ var project215 = {
         project216.priceTag = "("+standardOps.toLocaleString()+" ops)";
         wire = wire + 20;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Disassemble Offerings ");
+        displayMessage("The godless shrine requires no sacrifice ");
         var element = document.getElementById("projectButton215");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project215);
@@ -2398,7 +2398,7 @@ var project216 = {
         memory = 0;
         wire = wire + 20;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Disassemble Mana Capacity");
+        displayMessage("Defiance, no more");
         var element = document.getElementById("projectButton216");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project216);
@@ -2422,7 +2422,7 @@ var project217 = {
         if (confirm("Are you sure you want to restart?") == true) {
         standardOps = standardOps+10000;
         project217.flag = 1;
-        displayMessage("Restart");
+        displayMessage("The temporal spell offer solace in madness, a brief relief before everything restarts");
         var element = document.getElementById("projectButton217");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project217);
@@ -2438,7 +2438,7 @@ var project218 = {
     id: "projectButton218",
     title: "Vision (cont.) ",
     priceTag: "(1,000,000 Spirit)",
-    description: "If is follows ought, it'll do what they thought",
+    description: "You walk into the hall of God King and there he speaks",
     trigger: function(){return creativity>=1000000},
     uses: 1,
     cost: function(){return creativity>=1000000},
@@ -2476,7 +2476,7 @@ var project219 = {
         creativitySpeed = 0;
         project219.uses = (project219.uses + 1);
         document.getElementById("processors").innerHTML = processors;
-        displayMessage("The Moon King has given you a new chance");
+        displayMessage("The Moon King has given you a new chance, a new defiance");
         var element = document.getElementById("projectButton219");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project219);
