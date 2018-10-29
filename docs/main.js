@@ -1629,14 +1629,10 @@ pick = document.getElementById("stratPicker").value;
 }, 100);
 
 
-// Buffed attack--------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------
 
 
 function clipClick(number){
-    if(number == "main"){
-        number = 1
-        number = number*(1+processors)*(1+megaClipperLevel)*(1+clipmakerLevel)*(1+trust)*(1+memory)
-        }
 
     if (dismantle>=4){
         finalClips++;
