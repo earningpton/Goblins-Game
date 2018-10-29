@@ -256,6 +256,7 @@ var project10 = {
         displayMessage("The elves are a reclusive bunch who reside in a mythical forest, but they know how to reach the deepest depth of the dungeon ");
         displayMessage("You feed an immense amount of mana into the land scorched by goblins. With trees grown and life sprung, the Council agree to help whenever needed");
         displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
+        var element = document.getElementById("projectButton10");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project10);
         activeProjects.splice(index, 1);
@@ -280,6 +281,7 @@ var project10b = {
         displayMessage("Human, Gnome, Dwarf, and Elf, together they can achieve incredible feat.");
         displayMessage("You have united them, and by forging the rings of promise, you can now undo the spell protect the dungeon heart.");
         displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
+        var element = document.getElementById("projectButton10b");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project10b);
         activeProjects.splice(index, 1);
