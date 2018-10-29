@@ -6,7 +6,7 @@ function threnodyLoaded()
 }
 
 function loadThrenody(){
-    threnodyAudio.src = "test.mp3";
+    threnodyAudio.src = "nomoremagic.mp3";
     threnodyAudio.addEventListener('canplaythrough', threnodyLoaded);
 }
 
@@ -16,6 +16,20 @@ function playThrenody(){
         threnodyAudio.play();
     }
 }
+// Other Sound Function ---------------------------------------------------------
+
+function playSound () {
+    document.getElementById('play').play();
+}
+
+function loadThrenody2(){
+    threnodyAudio.src = "nomoremagic.mp3";
+
+}
+
+function playThrenody2(){
+
+        threnodyAudio.play();
 
 
 // Wire --------------------------------------------------------
@@ -3572,17 +3586,17 @@ if (dismantle >= 7) {
     }
 
     if (endTimer6>=600 && milestoneFlag == 16) {
-        displayMessage("A Universal Paperclips Reskin by Saiou");
+        displayMessage("A Universal Paperclips Fan Game by Saiou");
         milestoneFlag++;
     }
 
     if (endTimer6>=700 && milestoneFlag == 17) {
-        displayMessage("a game by Frank Lantz and combat programming by Bennett Foddy");
+        displayMessage("a main game programmed by Frank Lantz and combat programming by Bennett Foddy");
         milestoneFlag++;
     }
 
     if (endTimer6>=800 && milestoneFlag == 18) {
-        displayMessage("'Riversong' by Tonto's Expanding Headband used by kind permission of Malcolm Cecil");
+        displayMessage("'No More Magic' by Horror Pen");
         milestoneFlag++;
     }
 
