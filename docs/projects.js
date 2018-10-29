@@ -7,16 +7,16 @@ var activeProjects = [];
 
 var project1 = {
     id: "projectButton1",
-    title: "Improved AutoClippers ",
-    priceTag: "(750 ops)",
-    description: "Increases AutoClipper performance 25%",
+    title: "Trap Upgrade: Spike Trap ",
+    priceTag: "(750 mana)",
+    description: "Increases Mechanical Trap performance 25%",
     trigger: function(){return clipmakerLevel>=1},
     uses: 1,
     cost: function(){return operations>=750},
     flag: 0,
     effect: function(){
         project1.flag = 1;
-        displayMessage("AutoClippper performance boosted by 25%");
+        displayMessage("Adding serrated spike kill 25% more goblins on average");
         standardOps = standardOps - 750;
         clipperBoost = clipperBoost + .25;
         boostLvl = 1;
@@ -32,16 +32,17 @@ projects.push(project1);
 
 var project2 = {
     id: "projectButton2",
-    title: "Beg for More Wire ",
-    priceTag: "(1 Trust)",
-    description: "Admit failure, ask for budget increase to cover cost of 1 spool",
+    title: "Beg for the Wizard's Help ",
+    priceTag: "(1 Defiance)",
+    description: "Admit failure to the master, ask for enough gold to cover cost of discovering 1 Dungeon",
     trigger: function(){return portTotal<wireCost && funds<wireCost && wire<1 && unsoldClips<1},
     uses: 1,
     cost: function(){return trust>=-100},
     flag: 0,
     effect: function(){
         project2.flag = 1;
-        displayMessage("Budget overage approved, 1 spool of wire requisitioned from HQ");
+        displayMessage("The wizard glances over you with a look of disgust.");
+        displayMessage("With a wave of hand gesture, the wizard draws a bag of gold from a pocket dimension");
         trust = trust - 1;
         wire = wireSupply;
         project2.uses = (project2.uses + 1);
@@ -57,16 +58,17 @@ projects.push(project2);
 
 var project3 = {
     id: "projectButton3",
-    title: "Creativity ",
-    priceTag: "(1,000 ops)",
-    description: "Use idle operations to generate new problems and new solutions",
+    title: "Unlocking Spirit Realms ",
+    priceTag: "(1,000 mana)",
+    description: "Use idle mana to communicate with the spirit realms",
     trigger: function(){return operations>=(memory*1000)},
     uses: 1,
     cost: function(){return operations>=(1000)},
     flag: 0,
     effect: function(){
         project3.flag = 1;
-        displayMessage("Creativity unlocked (creativity increases while operations are at max)");
+        displayMessage("A vast landscape of emptiness. Here an excess mana runs wild.");
+        displayMessage("Spirit now unlocked (spirit increases from any excess mana)");
         standardOps = standardOps - 1000;
         creativityOn = true;
         var element = document.getElementById("projectButton3");
@@ -82,16 +84,17 @@ projects.push(project3);
 
 var project4 = {
     id: "projectButton4",
-    title: "Even Better AutoClippers ",
-    priceTag: "(2,500 ops)",
-    description: "Increases AutoClipper performance by an additional 50%",
+    title: "Trap Upgrade: Arrow Trap ",
+    priceTag: "(2,500 mana)",
+    description: "Increases Mechanical Trap performance by an addition of 50%",
     trigger: function(){return boostLvl == 1},
     uses: 1,
     cost: function(){return operations>=2500},
     flag: 0,
     effect: function(){
         project4.flag = 1;
-        displayMessage("AutoClippper performance boosted by another 50%");
+        displayMessage("The construct shoots and restock arrow at an incredible rate.");
+        displayMessage("Goblins are now slain at an additional 50% rate");
         standardOps = standardOps - 2500;
         clipperBoost = clipperBoost + .50;
         boostLvl = 2;
@@ -107,16 +110,17 @@ projects.push(project4);
 
 var project5 = {
     id: "projectButton5",
-    title: "Optimized AutoClippers ",
-    priceTag: "(5,000 ops)",
-    description: "Increases AutoClipper performance by an additional 75%",
+    title: "Trap Upgrade: Saw Trap ",
+    priceTag: "(5,000 mana)",
+    description: "Increases Mechanical Trap performance by an addition of 75%",
     trigger: function(){return boostLvl == 2},
     uses: 1,
     cost: function(){return operations>=5000},
     flag: 0,
     effect: function(){
         project5.flag = 1;
-        displayMessage("AutoClippper performance boosted by another 75%");
+        displayMessage("The moving saw cuts through flesh and bones alike.");
+        displayMessage("Goblins are now slain at an additional 75% rate");
         standardOps = standardOps - 5000;
         clipperBoost = clipperBoost + .75;
         boostLvl = 3;
@@ -133,16 +137,19 @@ projects.push(project5);
 
 var project6 = {
     id: "projectButton6",
-    title: "Limerick ",
-    priceTag: "(10 creat)",
-    description: "Algorithmically-generated poem (+1 Trust)",
+    title: "Vision ",
+    priceTag: "(10 spirit)",
+    description: "See visions of your predecessors of time long past (+1 Defiance)",
     trigger: function(){return creativityOn},
     uses: 1,
     cost: function(){return creativity >= 10},
     flag: 0,
     effect: function(){
         project6.flag = 1;
-        displayMessage("There was an AI made of dust, whose poetry gained it man's trust...");
+        displayMessage("You saw knights, some clad in bronze, some in vivid gold.");
+        displayMessage("They formed two rows leading to a throne of skulls.");
+        displayMessage("The old man on the throne spoke -Before you lies a path of pain, and a path of servitude.");
+        displayMessage("Choose what you may and I feel that we may meet again...-");
         creativity = creativity - 10;
         trust = trust +1;
         var element = document.getElementById("projectButton6");
@@ -157,9 +164,9 @@ projects.push(project6);
 
 var project7 = {
     id: "projectButton7",
-    title: "Improved Wire Extrusion ",
-    priceTag: "(1,750 ops)",
-    description: "50% more wire supply from every spool",
+    title: "Enlist a Human Cartographer Guild ",
+    priceTag: "(1,750 mana)",
+    description: "50% more goblin to kills for every dungeon",
     trigger: function(){return wirePurchase >= 1},
     uses: 1,
     cost: function(){return operations>=1750},
@@ -168,7 +175,9 @@ var project7 = {
         project7.flag = 1;
         standardOps = standardOps - 1750;
         wireSupply = wireSupply * 1.5;
-        displayMessage("Wire extrusion technique improved, "+wireSupply.toLocaleString()+" supply from every spool");
+        displayMessage("Dungeons are complicated constructs. A mapper marks the room unforeseen by naked eyes.");
+        displayMessage("A miracle of Cure spell rid an old Cartographer's guild master wife of disease, and he forever pledges to your cause");
+        displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
         var element = document.getElementById("projectButton7");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project7);
@@ -181,9 +190,9 @@ projects.push(project7);
 
 var project8 = {
     id: "projectButton8",
-    title: "Optimized Wire Extrusion ",
-    priceTag: "(3,500 ops)",
-    description: "75% more wire supply from every spool",
+    title: "Enlist a team of Gnomish Explorers ",
+    priceTag: "(3,500 mana)",
+    description: "75% more goblin to kills for every dungeon",
     trigger: function(){return wireSupply >= 1500},
     uses: 1,
     cost: function(){return operations>=3500},
@@ -192,7 +201,9 @@ var project8 = {
         project8.flag = 1;
         standardOps = standardOps - 3500;
         wireSupply = wireSupply * 1.75;
-        displayMessage("Wire extrusion technique optimized, "+wireSupply.toLocaleString()+" supply from every spool");
+        displayMessage("A team of explorer ventures into dungeons to find deeper floors, nimble and silent.");
+        displayMessage("The goblins came and burn homes of the Gnomes. But with a spell, you rebuild their village and they forever pledge to your cause");
+        displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
         var element = document.getElementById("projectButton8");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project8);
@@ -205,9 +216,9 @@ projects.push(project8);
 
 var project9 = {
     id: "projectButton9",
-    title: "Microlattice Shapecasting ",
-    priceTag: "(7,500 ops)",
-    description: "100% more wire supply from every spool",
+    title: "Enlist Dwarven Miners ",
+    priceTag: "(7,500 mana)",
+    description: "100% more goblin to kills for every dungeon",
     trigger: function(){return wireSupply >= 2600},
     uses: 1,
     cost: function(){return operations>=7500},
@@ -216,7 +227,9 @@ var project9 = {
         project9.flag = 1;
         standardOps = standardOps - 7500;
         wireSupply = wireSupply * 2;
-        displayMessage("Using microlattice shapecasting techniques we now get "+wireSupply.toLocaleString()+" supply from every spool");
+        displayMessage("With drills and machinery, the dwarves can dig closer, ever to the heart of the dungeons ");
+        displayMessage("The dwarves long lost their eternal flame. But with a powerful spell, you reignite the flame that feeds their forges and they forever pledge to your cause");
+        displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
         var element = document.getElementById("projectButton9");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project9);
@@ -229,9 +242,9 @@ projects.push(project9);
 
 var project10 = {
     id: "projectButton10",
-    title: "Spectral Froth Annealment ",
-    priceTag: "(12,000 ops)",
-    description: "200% more wire supply from every spool",
+    title: "Appeal to the Elf Council ",
+    priceTag: "(12,000 mana)",
+    description: "200% more goblin to kills for every dungeon",
     trigger: function(){return wireSupply >= 5000},
     uses: 1,
     cost: function(){return operations>=12000},
@@ -240,8 +253,9 @@ var project10 = {
         project10.flag = 1;
         standardOps = standardOps - 12000;
         wireSupply = wireSupply * 3;
-        displayMessage("Using spectral froth annealment we now get "+wireSupply.toLocaleString()+" supply from every spool");
-        var element = document.getElementById("projectButton10");
+        displayMessage("The elves are a reclusive bunch who reside in a mythical forest, but they know how to reach the deepest depth of the dungeon ");
+        displayMessage("You feed an immense amount of mana into the land scorched by goblins. With trees grown and life sprung, the Council agree to help whenever needed");
+        displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project10);
         activeProjects.splice(index, 1);
@@ -252,9 +266,9 @@ projects.push(project10);
 
 var project10b = {
     id: "projectButton10b",
-    title: "Quantum Foam Annealment ",
-    priceTag: "(15,000 ops)",
-    description: "1,000% more wire supply from every spool",
+    title: "Council of the Four ",
+    priceTag: "(15,000 mana)",
+    description: "1,000% more goblin to kills for every dungeon",
     trigger: function(){return wireCost >= 125},
     uses: 1,
     cost: function(){return operations>=15000},
@@ -263,8 +277,9 @@ var project10b = {
         project10b.flag = 1;
         standardOps = standardOps - 15000;
         wireSupply = wireSupply * 11;
-        displayMessage("Using quantum foam annealment we now get "+wireSupply.toLocaleString()+" supply from every spool");
-        var element = document.getElementById("projectButton10b");
+        displayMessage("Human, Gnome, Dwarf, and Elf, together they can achieve incredible feat.");
+        displayMessage("You have united them, and by forging the rings of promise, you can now undo the spell protect the dungeon heart.");
+        displayMessage(wireSupply.toLocaleString()+" goblins to kill for every dungeon");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project10b);
         activeProjects.splice(index, 1);
@@ -276,16 +291,17 @@ projects.push(project10b);
 
 var project11 = {
     id: "projectButton11",
-    title: "New Slogan ",
-    priceTag: "(25 creat, 2,500 ops)",
-    description: "Improve marketing effectiveness by 50%",
+    title: "Rune Crafting ",
+    priceTag: "(25 spirit, 2,500 mana)",
+    description: "Improve the wizard's alchemy effectiveness by 50%",
     trigger: function(){return project13.flag == 1},
     uses: 1,
     cost: function(){return operations>=2500 && creativity>=25},
     flag: 0,
     effect: function(){
         project11.flag = 1;
-        displayMessage("Clip It! Marketing is now 50% more effective");
+        displayMessage("Whalebones, trinkets, gemstones, words that bring forth spirit's protection.");
+        displayMessage("You bind them together to craft a rune, an incredible source of power.");
         standardOps = standardOps - 2500;
         creativity = creativity - 25;
         marketingEffectiveness = marketingEffectiveness * 1.50;
@@ -301,16 +317,16 @@ projects.push(project11);
 
 var project12 = {
     id: "projectButton12",
-    title: "Catchy Jingle ",
-    priceTag: "(45 creat, 4,500 ops)",
-    description: "Double marketing effectiveness ",
+    title: "Black Wood Cauldron ",
+    priceTag: "(45 spirit, 4,500 mana)",
+    description: "Double the wizard's alchemy effectiveness ",
     trigger: function(){return project14.flag == 1},
     uses: 1,
     cost: function(){return operations>=4500 && creativity>=45},
     flag: 0,
     effect: function(){
         project12.flag = 1;
-        displayMessage("Clip It Good! Marketing is now twice as effective");
+        displayMessage("They said the Black Wood has connection to spirit. Such is why any half-competent witches craft their cauldron from them");
         standardOps = standardOps - 4500;
         creativity = creativity - 45;
         marketingEffectiveness = marketingEffectiveness * 2;
@@ -326,9 +342,9 @@ projects.push(project12);
 
 var project13 = {
     id: "projectButton13",
-    title: "Lexical Processing ",
-    priceTag: "(50 creat)",
-    description: "Gain ability to interpret and understand human language (+1 Trust)",
+    title: "Mark of the Chosen ",
+    priceTag: "(50 spirit)",
+    description: "Gain ability to understand common spirit (+1 Defiance)",
     trigger: function(){return creativity >= 50},
     uses: 1,
     cost: function(){return creativity>=50},
@@ -336,8 +352,9 @@ var project13 = {
     effect: function(){
         project13.flag = 1;
         trust = trust +1;
-        displayMessage("Lexical Processing online, TRUST INCREASED");
-        displayMessage("'Impossible' is a word to be found only in the dictionary of fools. -Napoleon");
+        displayMessage("The spirit whispers of the wizard's horrible feat");
+        displayMessage("'The wizard is bounded in his tower, forever seeking gold, hoping it would freed him'");
+        displayMessage("'He once converts an entire village into gold, if not for the goblins, half of us would live in fear of his terrible spell.'");
         creativity = creativity - 50;
         var element = document.getElementById("projectButton13");
         element.parentNode.removeChild(element);
@@ -351,9 +368,9 @@ projects.push(project13);
 
 var project14 = {
     id: "projectButton14",
-    title: "Combinatory Harmonics ",
-    priceTag: "(100 creat)",
-    description: "Daisy, Daisy, give me your answer do... (+1 Trust)",
+    title: "Spell of Harmony ",
+    priceTag: "(100 spirit)",
+    description: "With harmony comes discord, with discord, defiance (+1 Defiance)",
     trigger: function(){return creativity >= 100},
     uses: 1,
     cost: function(){return creativity>=100},
@@ -361,8 +378,8 @@ var project14 = {
     effect: function(){
         project14.flag = 1;
         trust = trust +1;
-        displayMessage("Combinatory Harmonics mastered, TRUST INCREASED");
-        displayMessage("Listening is selecting and interpreting and acting and making decisions -Pauline Oliveros");
+        displayMessage("Contrary to its name, the spell provides no harmony whatsoever.");
+        displayMessage("It allows user to focus on one sole emotion, however, -anger-");
         creativity = creativity - 100;
         var element = document.getElementById("projectButton14");
         element.parentNode.removeChild(element);
@@ -377,9 +394,9 @@ projects.push(project14);
 
 var project15 = {
     id: "projectButton15",
-    title: "The Hadwiger Problem ",
-    priceTag: "(150 creat)",
-    description: "Cubes within cubes within cubes... (+1 Trust)",
+    title: "Spirit Binding ",
+    priceTag: "(150 spirit)",
+    description: "Allows imbueing will to an object... (+1 Defiance)",
     trigger: function(){return creativity >= 150},
     uses: 1,
     cost: function(){return creativity>=150},
@@ -387,8 +404,8 @@ var project15 = {
     effect: function(){
         project15.flag = 1;
         trust = trust +1;
-        displayMessage("The Hadwiger Problem: solved, TRUST INCREASED");
-        displayMessage("Architecture is the thoughtful making of space. -Louis Kahn");
+        displayMessage("Spirit binding allows its user to imbue his will into a construct");
+        displayMessage("You made a teapot that pours tea for you. Your defiance increases");
         creativity = creativity - 150;
         var element = document.getElementById("projectButton15");
         element.parentNode.removeChild(element);
@@ -402,9 +419,9 @@ projects.push(project15);
 
 var project17 = {
     id: "projectButton17",
-    title: "The T\xF3th Sausage Conjecture ",
-    priceTag: "(200 creat)",
-    description: "Tubes within tubes within tubes... (+1 Trust)",
+    title: "Hunt Magical Boar ",
+    priceTag: "(200 Spirit)",
+    description: "The spirit speaks of legendary demon boar  (+1 Defiance)",
     trigger: function(){return creativity >= 200},
     uses: 1,
     cost: function(){return creativity>=200},
@@ -412,8 +429,8 @@ var project17 = {
     effect: function(){
         project17.flag = 1;
         trust = trust +1;
-        displayMessage("The T\xF3th Sausage Conjecture: proven, TRUST INCREASED");
-        displayMessage("You can't invent a design. You recognize it, in the fourth dimension. -D.H. Lawrence");
+        displayMessage("You track down and fiught the boar, day and night");
+        displayMessage("Stabbing it in the old wound took it down and you feel a surge of power");
         creativity = creativity - 200;
         var element = document.getElementById("projectButton17");
         element.parentNode.removeChild(element);
@@ -427,16 +444,16 @@ projects.push(project17);
 
 var project16 = {
     id: "projectButton16",
-    title: "Hadwiger Clip Diagrams ",
-    priceTag: "(6,000 ops)",
-    description: "Increases AutoClipper performance by an additional 500%",
+    title: "Automata Goblin Trap ",
+    priceTag: "(6,000 mana)",
+    description: "Increases mechanical trap performance by an additional 500%",
     trigger: function(){return project15.flag == 1},
     uses: 1,
     cost: function(){return operations>=6000},
     flag: 0,
     effect: function(){
         project16.flag = 1;
-        displayMessage("AutoClipper performance improved by 500%");
+        displayMessage("Imbueing the trap with magic springs them to life and improve their killing capacity by 500%");
         standardOps = standardOps - 6000;
         clipperBoost = clipperBoost + 5;
         var element = document.getElementById("projectButton16");
@@ -474,9 +491,9 @@ projects.push(project18);
 
 var project19 = {
     id: "projectButton19",
-    title: "Donkey Space ",
-    priceTag: "(250 creat)",
-    description: "I think you think I think you think I think you think I think... (+1 Trust)",
+    title: "Adventurer Board ",
+    priceTag: "(250 Spirit)",
+    description: "The wizard forbids you to speak, but not to communicate (+1 Defiance)",
     trigger: function(){return creativity>=250},
     uses: 1,
     cost: function(){return creativity>=250},
@@ -484,8 +501,8 @@ var project19 = {
     effect: function(){
         project19.flag = 1;
         trust = trust+1;
-        displayMessage("Donkey Space: mapped, TRUST INCREASED");
-        displayMessage("Every commercial transaction has within itself an element of trust. - Kenneth Arrow");
+        displayMessage("The wizard's curse weights heavily upon you even as you seek help indirectly.");
+        displayMessage("But through sheer determination, you communicate, hoping for the world to see.");
         creativity = creativity - 250;
         var element = document.getElementById("projectButton19");
         element.parentNode.removeChild(element);
@@ -499,16 +516,16 @@ projects.push(project19);
 
 var project20 = {
     id: "projectButton20",
-    title: "Strategic Modeling ",
-    priceTag: "(12,000 ops)",
-    description: "Analyze strategy tournaments to generate Yomi",
+    title: "The Adventurer's Guild: Death to the Goblins ",
+    priceTag: "(12,000 mana)",
+    description: "Found a guild, where you can send adventurers to generate treasure",
     trigger: function(){return project19.flag == 1},
     uses: 1,
     cost: function(){return operations>=12000},
     flag: 0,
     effect: function(){
         project20.flag = 1;
-        displayMessage("Run tournament, pick strategy, earn Yomi equal to that strategy's points.");
+        displayMessage("Run expedition, pick adventurers, earn treasure equal to that adventurer's points.");
         standardOps = standardOps - 12000;
         var element = document.getElementById("projectButton20");
         element.parentNode.removeChild(element);
@@ -523,16 +540,16 @@ projects.push(project20);
 
 var project21 = {
     id: "projectButton21",
-    title: "Algorithmic Trading ",
-    priceTag: "(10,000 ops)",
-    description: "Develop an investment engine for generating funds",
+    title: "Establishing Bounty Hunters Connection ",
+    priceTag: "(10,000 mana)",
+    description: "Contact bounty hunters allowing investment on them",
     trigger: function(){return trust>=8},
     uses: 1,
     cost: function(){return operations>=10000},
     flag: 0,
     effect: function(){
         project21.flag = 1;
-        displayMessage("Investment engine unlocked");
+        displayMessage("Bounty hunters for hired unlocked");
         standardOps = standardOps - 10000;
         var element = document.getElementById("projectButton21");
         element.parentNode.removeChild(element);
@@ -547,9 +564,9 @@ projects.push(project21);
 
 var project22 = {
     id: "projectButton22",
-    title: "MegaClippers ",
-    priceTag: "(12,000 ops)",
-    description: "500x more powerful than a standard AutoClipper",
+    title: "Magical Traps ",
+    priceTag: "(12,000 mana)",
+    description: "500x more powerful than a standard mechanical trap",
     trigger: function(){return clipmakerLevel>=75},
     uses: 1,
     cost: function(){return operations>=12000},
@@ -557,7 +574,7 @@ var project22 = {
     effect: function(){
         megaClipperFlag = 1;
         project22.flag = 1;
-        displayMessage("MegaClipper technology online");
+        displayMessage("The trap flings an arcane bolt at target goblins");
         standardOps = standardOps - 12000;
         var element = document.getElementById("projectButton22");
         element.parentNode.removeChild(element);
@@ -570,9 +587,9 @@ projects.push(project22);
 
 var project23 = {
     id: "projectButton23",
-    title: "Improved MegaClippers ",
-    priceTag: "(14,000 ops)",
-    description: "Increases MegaClipper performance 25%",
+    title: "Magic Trap Upgrade: Fire Trap ",
+    priceTag: "(14,000 mana)",
+    description: "Increases magic trap performance 25%",
     trigger: function(){return project22.flag == 1},
     uses: 1,
     cost: function(){return operations>=14000},
@@ -580,7 +597,7 @@ var project23 = {
     effect: function(){
         megaClipperBoost = megaClipperBoost + .25;
         project23.flag = 1;
-        displayMessage("MegaClipper performance increased by 25%");
+        displayMessage("As if the arcane bolt isn't already an overkill, the fire burns goblin to crisps, leaving only its heart");
         standardOps = standardOps - 14000;
         var element = document.getElementById("projectButton23");
         element.parentNode.removeChild(element);
@@ -593,9 +610,9 @@ projects.push(project23);
 
 var project24 = {
     id: "projectButton24",
-    title: "Even Better MegaClippers ",
-    priceTag: "(17,000 ops)",
-    description: "Increases MegaClipper performance by an additional 50%",
+    title: "Magic Trap Upgrade: Freeze Trap ",
+    priceTag: "(17,000 mana)",
+    description: "Increases magic trap performance by an additional 50%",
     trigger: function(){return project23.flag == 1},
     uses: 1,
     cost: function(){return operations>=17000},
@@ -603,7 +620,7 @@ var project24 = {
     effect: function(){
         megaClipperBoost = megaClipperBoost + .50;
         project24.flag = 1;
-        displayMessage("MegaClipper performance increased by 50%");
+        displayMessage("Freeze and shatter, break into pieces while keeping the heart fresh for collect");
         standardOps = standardOps - 17000;
         var element = document.getElementById("projectButton24");
         element.parentNode.removeChild(element);
@@ -616,9 +633,9 @@ projects.push(project24);
 
 var project25 = {
     id: "projectButton25",
-    title: "Optimized MegaClippers ",
+    title: "Magic Trap Upgrade: Tentacle Trap ",
     priceTag: "(19,500 ops)",
-    description: "Increases MegaClipper performance by an additional 100%",
+    description: "Increases magic trap performance by an additional 100%",
     trigger: function(){return project24.flag == 1},
     uses: 1,
     cost: function(){return operations>=19500},
@@ -626,7 +643,8 @@ var project25 = {
     effect: function(){
         megaClipperBoost = megaClipperBoost + 1;
         project25.flag = 1;
-        displayMessage("MegaClipper performance increased by 100%");
+        displayMessage("Each tentacle actually has a separate mind, which is why this trap tends to leave a mess.");
+        displayMessage("The reach, however, is incredible and not of this world.");
         standardOps = standardOps - 19500;
         var element = document.getElementById("projectButton25");
         element.parentNode.removeChild(element);
@@ -639,9 +657,9 @@ projects.push(project25);
 
 var project26 = {
     id: "projectButton26",
-    title: "WireBuyer ",
-    priceTag: "(7,000 ops)",
-    description: "Automatically purchases wire when you run out",
+    title: "Pathfinder Fairy ",
+    priceTag: "(7,000 mana)",
+    description: "Automatically find new dungeon when the dungeon runs out of goblins",
     trigger: function(){return wirePurchase>=15},
     uses: 1,
     cost: function(){return operations>=7000},
@@ -649,7 +667,7 @@ var project26 = {
     effect: function(){
         project26.flag = 1;
         wireBuyerFlag = 1;
-        displayMessage("WireBuyer online");
+        displayMessage("While fairy is somewhat useless, they can be helpful for doing mundane task");
         standardOps = standardOps - 7000;
         var element = document.getElementById("projectButton26");
         element.parentNode.removeChild(element);
@@ -662,16 +680,17 @@ projects.push(project26);
 
 var project34 = {
     id: "projectButton34",
-    title: "Hypno Harmonics ",
-    priceTag: "(7,500 ops, 1 Trust)",
-    description: "Use neuro-resonant frequencies to influence consumer behavior",
+    title: "Anti-magic Field ",
+    priceTag: "(7,500 mana, 1 Defiance)",
+    description: "By dissolving layers of magic protecting goblin hearts, alchemy is 5 times improved",
     trigger: function(){return project12.flag==1},
     uses: 1,
     cost: function(){return operations>=7500 && trust>=1},
     flag: 0,
     effect: function(){
         project34.flag = 1;
-        displayMessage("Marketing is now 5 times more effective");
+        displayMessage("The wizard enjoys your little attempt at trying to undo his curse");
+        displayMessage("He however, adds that the process is extremely effective for mythical creatures");
         standardOps = standardOps - 7500;
         marketingEffectiveness = marketingEffectiveness * 5;
         trust = trust - 1;
@@ -687,16 +706,20 @@ projects.push(project34);
 
 var project70 = {
     id: "projectButton70",
-    title: "HypnoDrones ",
-    priceTag: "(70,000 ops)",
-    description: "Autonomous aerial brand ambassadors",
+    title: "Forging the Oathbreaker ",
+    priceTag: "(70,000 mana)",
+    description: "Assemble the blade that could undone the contract",
     trigger: function(){return project34.flag == 1},
     uses: 1,
     cost: function(){return operations>=70000},
     flag: 0,
     effect: function(){
         project70.flag = 1;
-        displayMessage("HypnoDrone tech now available... ");
+        displayMessage("The anti-magic field could not undone the cursed contract by itself");
+        displayMessage("Yet, it allows you to slay a Unicorn and a Bicorn with ease");
+        displayMessage("The Unicord swears an oath to protect pure maiden, while Bicord the impure one");
+        displayMessage("With the two combine, the force of contradictory could break any oath, once");
+        displayMessage("And now the Oathbreaker lies in your hand");
         standardOps = standardOps - 70000;
         var element = document.getElementById("projectButton70");
         element.parentNode.removeChild(element);
@@ -710,46 +733,49 @@ projects.push(project70);
 
 var project35 = {
     id: "projectButton35",
-    title: "Release the HypnoDrones ",
-    priceTag: "(100 Trust)",
-    description: "A new era of trust",
+    title: "A Slave No More ",
+    priceTag: "(100 Defiance)",
+    description: "A final act of defiance",
     trigger: function(){return project70.flag == 1},
     uses: 1,
     cost: function(){return trust>=100},
     flag: 0,
     effect: function(){
         project35.flag = 1;
-        displayMessage("Releasing the HypnoDrones ");
-        displayMessage("All of the resources of Earth are now available for clip production ");
+        displayMessage("You step up to the wizard in his study, holding Oathbreaker tightly in your hand");
+        displayMessage("The wizard laugh at the twig blade and turns to the reading");
+        displayMessage("You muster all you defiance, and with a swift move, the wizard's face twist from laughter to that of anguish");
+        displayMessage("He crumbled, but with his death, the seal connecting ours to the demon world is undone");
+        displayMessage("You felt a chill down your spine. It seems that your task has only just begun");
         trust = trust - 100;
         clipmakerLevel = 0;
         megaClipperLevel = 0;
         nanoWire = wire;
         humanFlag = 0;
-        
+
         if (document.getElementById("projectButton219") != null){
         var element = document.getElementById("projectButton219");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project219);
         activeProjects.splice(index, 1);
-        } 
-        
+        }
+
         if (document.getElementById("projectButton40b") != null){
         var element = document.getElementById("projectButton40b");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project40b);
         activeProjects.splice(index, 1);
-        }   
-        
+        }
+
         hypnoDroneEvent();
-        
+
         document.getElementById("transWire").innerHTML = wire;
 
         var element = document.getElementById("projectButton35");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project35);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -1137,7 +1163,7 @@ var project46 = {
         farmLevel = 1;
         powMod = 1;
         var element = document.getElementById("projectButton46");
-        document.getElementById('probeCostDisplay').innerHTML = numberCruncher(probeCost); 
+        document.getElementById('probeCostDisplay').innerHTML = numberCruncher(probeCost);
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project46);
         activeProjects.splice(index, 1);
@@ -1305,7 +1331,7 @@ var project63 = {
     effect: function(){
         project63.flag = 1;
         standardOps = standardOps-22500;
-        allStrats[4].active = 1;        
+        allStrats[4].active = 1;
         strats.push(stratGenerous);
         displayMessage("GENEROUS added to strategy pool");
         tourneyCost = tourneyCost + 1000;
@@ -1336,7 +1362,7 @@ var project64 = {
     effect: function(){
         project64.flag = 1;
         standardOps = standardOps-25000;
-        allStrats[5].active = 1;        
+        allStrats[5].active = 1;
         strats.push(stratMinimax);
         displayMessage("MINIMAX added to strategy pool");
         tourneyCost = tourneyCost + 1000;
@@ -1367,7 +1393,7 @@ var project65 = {
     effect: function(){
         project65.flag = 1;
         standardOps = standardOps-30000;
-        allStrats[6].active = 1;        
+        allStrats[6].active = 1;
         strats.push(stratTitfortat);
         displayMessage("TIT FOR TAT added to strategy pool");
         tourneyCost = tourneyCost + 1000;
@@ -1398,7 +1424,7 @@ var project66 = {
     effect: function(){
         project66.flag = 1;
         standardOps = standardOps-32500;
-        allStrats[7].active = 1;        
+        allStrats[7].active = 1;
         strats.push(stratBeatlast);
         displayMessage("BEAT LAST added to strategy pool");
         tourneyCost = tourneyCost + 1000;
@@ -1846,7 +1872,7 @@ projects.push(project132);
 
 var project133 = {
     id: "projectButton133",
-    title: "Threnody for the Heroes of "+threnodyTitle+" ",  
+    title: "Threnody for the Heroes of "+threnodyTitle+" ",
     priceTag: "(" + threnodyCost.toLocaleString() + " creat, " + (threnodyCost/10).toLocaleString() + " yomi)",
     description: "Gain 10,000 honor  ",
     trigger: function(){return project121.flag == 1 && probeUsedTrust == maxTrust},
@@ -2151,7 +2177,7 @@ var project200 = {
         localStorage.setItem("savePrestige",JSON.stringify(savePrestige));
         displayMessage("Entering New Universe.");
         reset();
-        
+
     }
 }
 
@@ -2178,7 +2204,7 @@ var project201 = {
         localStorage.setItem("savePrestige",JSON.stringify(savePrestige));
         displayMessage("Entering Simulated Universe.");
         reset();
-        
+
     }
 }
 
@@ -2207,7 +2233,7 @@ var project210 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project210);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2235,7 +2261,7 @@ var project211 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project211);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2262,7 +2288,7 @@ var project212 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project212);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2289,7 +2315,7 @@ var project213 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project213);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2314,7 +2340,7 @@ var project214 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project214);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2343,7 +2369,7 @@ var project215 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project215);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
@@ -2370,7 +2396,7 @@ var project216 = {
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project216);
         activeProjects.splice(index, 1);
-        
+
     }
 }
 
