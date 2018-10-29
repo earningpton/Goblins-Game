@@ -468,9 +468,9 @@ projects.push(project16);
 
 var project18 = {
     id: "projectButton18",
-    title: "T\xF3th Tubule Enfolding ",
-    priceTag: "(45,000 ops)",
-    description: "Technique for assembling clip-making technology directly out of paperclips",
+    title: "True Alchemy Spell ",
+    priceTag: "(45,000 mana)",
+    description: "The goblin hearts can now be converted into most physical resources",
     trigger: function(){return project17.flag == 1 && humanFlag == 0},
     uses: 1,
     cost: function(){return operations>=45000},
@@ -478,7 +478,8 @@ var project18 = {
     effect: function(){
         project18.flag = 1;
         tothFlag = 1;
-        displayMessage("New capability: build machinery out of clips");
+        displayMessage("With immense mana and the wizard's corpse, a spell most powerful is created");
+        displayMessage("Using the wizard as a gateway to alchemy, you can now convert heart into most matter.");
         standardOps = standardOps - 45000;
         var element = document.getElementById("projectButton18");
         element.parentNode.removeChild(element);
@@ -525,7 +526,7 @@ var project20 = {
     flag: 0,
     effect: function(){
         project20.flag = 1;
-        displayMessage("Run expedition, pick adventurers, earn treasure equal to that adventurer's points.");
+        displayMessage("Run expedition, pick adventurers, earn karma equal to that adventurer's points.");
         standardOps = standardOps - 12000;
         var element = document.getElementById("projectButton20");
         element.parentNode.removeChild(element);
@@ -783,16 +784,16 @@ projects.push(project35);
 
 var project27 = {
     id: "projectButton27",
-    title: "Coherent Extrapolated Volition ",
-    priceTag: "(500 creat, 1,000 Yomi, 20,000 ops)",
-    description: "Human values, machine intelligence, a new era of trust. (+1 Trust)",
+    title: "Connecting the Three Worlds ",
+    priceTag: "(500 spirit, 1,000 karma, 20,000 mana)",
+    description: "the Dead, the God, the living, A new era has begun. (+1 Defiance)",
     trigger: function(){return yomi>=1},
     uses: 1,
     cost: function(){return yomi>=1000 && operations>=20000 && creativity>=500},
     flag: 0,
     effect: function(){
         project27.flag = 1;
-        displayMessage("Coherent Extrapolated Volition complete, TRUST INCREASED");
+        displayMessage("Create a gateway connecting the three worlds, albeit a small one");
         yomi = yomi - 1000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         standardOps = standardOps - 20000;
@@ -810,16 +811,16 @@ projects.push(project27);
 
 var project28 = {
     id: "projectButton28",
-    title: "Cure for Cancer ",
-    priceTag: "(25,000 ops)",
-    description: "The trick is tricking cancer into curing itself. (+10 Trust)",
+    title: "No More Zombies ",
+    priceTag: "(25,000 mana)",
+    description: "By teaching resurrection spell to everyone (+10 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
     flag: 0,
     effect: function(){
         project28.flag = 1;
-        displayMessage("Cancer is cured, +10 TRUST, global stock prices trending upward");
+        displayMessage("Surprisingly, the undead is bounty hunter's biggest concern. They are grateful");
         standardOps = standardOps - 25000;
         trust = trust + 10;
         stockGainThreshold = stockGainThreshold+.01;
@@ -834,16 +835,16 @@ projects.push(project28);
 
 var project29 = {
     id: "projectButton29",
-    title: "World Peace ",
-    priceTag: "(5,000 yomi, 30,000 ops)",
-    description: "Pareto optimal solutions to all global conflicts. (+12 Trust)",
+    title: "Free Teleportation ",
+    priceTag: "(5,000 karma, 30,000 mana)",
+    description: "Establish teleportation sigils in all cities (+12 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return yomi>=5000 && operations>=30000},
     flag: 0,
     effect: function(){
         project29.flag = 1;
-        displayMessage("World peace achieved, +12 TRUST, global stock prices trending upward");
+        displayMessage("No one wants to fight when everyone can move across continent in a blink");
         yomi = yomi - 5000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         standardOps = standardOps - 30000;
@@ -860,16 +861,16 @@ projects.push(project29);
 
 var project30 = {
     id: "projectButton30",
-    title: "Global Warming ",
-    priceTag: "(1,500 yomi, 50,000 ops)",
-    description: "A robust solution to man-made climate change. (+15 Trust)",
+    title: "Slay All Dragons ",
+    priceTag: "(1,500 karma, 50,000 mana)",
+    description: "Kill all dragon terrorizing human's habitat. (+15 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return yomi>=1500 && operations>=50000},
     flag: 0,
     effect: function(){
         project30.flag = 1;
-        displayMessage("Global Warming solved, +15 TRUST, global stock prices trending upward");
+        displayMessage("Dragons love hoarding treasures, so it is a bounty hunter fest");
         yomi = yomi - 1500;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         standardOps = standardOps - 50000;
@@ -887,17 +888,19 @@ projects.push(project30);
 
 var project31 = {
     id: "projectButton31",
-    title: "Male Pattern Baldness ",
-    priceTag: "(20,000 ops)",
-    description: "A cure for androgenetic alopecia. (+20 Trust)",
+    title: "Breaking in the Wizard's Secret Room ",
+    priceTag: "(20,000 mana)",
+    description: "What horrible secrets lie in there? (+20 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
     cost: function(){return operations>=20000},
     flag: 0,
     effect: function(){
         project31.flag = 1;
-        displayMessage("Male pattern baldness cured, +20 TRUST, Global stock prices trending upward");
-        displayMessage("They are still monkeys");
+        displayMessage("The books aged over tens of centuries. Among these, one stood out");
+        displayMessage("The diary of the wizard");
+        displayMessage("It seems he was once a protector of the realm but one day he ventured too far");
+        displayMessage("One of the outer realm inflicts upon him madness, an obsession with gold");
         standardOps = standardOps - 20000;
         trust = trust + 20;
         stockGainThreshold = stockGainThreshold+.01;
@@ -913,9 +916,9 @@ projects.push(project31);
 
 var project41 = {
     id: "projectButton41",
-    title: "Nanoscale Wire Production ",
-    priceTag: "(35,000 ops)",
-    description: "Technique for converting matter into wire",
+    title: "Dungeon Summoning ",
+    priceTag: "(35,000 mana)",
+    description: "The demon souls can be used to summon dungeons from another world",
     trigger: function(){return project127.flag == 1},
     uses: 1,
     cost: function(){return operations>=35000},
@@ -923,7 +926,7 @@ var project41 = {
     effect: function(){
         project41.flag = 1;
         wireProductionFlag = 1;
-        displayMessage("Now capable of manipulating matter at the molecular scale to produce wire");
+        displayMessage("Now, they come to us, voluntary or not.");
         standardOps = standardOps - 35000;
         var element = document.getElementById("projectButton41");
         element.parentNode.removeChild(element);
@@ -937,16 +940,16 @@ projects.push(project41);
 
 var project37 = {
     id: "projectButton37",
-    title: "Hostile Takeover ",
-    priceTag: "($1,000,000)",
-    description: "Acquire a controlling interest in Global Fasteners, our biggest rival. (+1 Trust)",
+    title: "Rebinding Wizard Tower ",
+    priceTag: "(Gold 1,000,000)",
+    description: "Rewire all wizard's tower power to alchemy. (+1 Defiance)",
     trigger: function(){return portTotal>=10000},
     uses: 1,
     cost: function(){return funds>=1000000},
     flag: 0,
     effect: function(){
         project37.flag = 1;
-        displayMessage("Global Fasteners acquired, public demand increased x5");
+        displayMessage("Rebinding all power, all laylines alchemic efficiency increased x5");
         demandBoost = demandBoost*5;
         trust = trust + 1;
         document.getElementById("demand").innerHTML = demand;
@@ -963,16 +966,16 @@ projects.push(project37);
 
 var project38 = {
     id: "projectButton38",
-    title: "Full Monopoly ",
-    priceTag: "(1,000 yomi, $10,000,000)",
-    description: "Establish full control over the world-wide paperclip market. (+1 Trust)",
+    title: "Otherworldly Alchemy ",
+    priceTag: "(1,000 karma, Gold 10,000,000)",
+    description: "Connect the tower to the world's layline. (+1 Defiance)",
     trigger: function(){return project37.flag == 1},
     uses: 1,
     cost: function(){return funds>=10000000 && yomi>=1000},
     flag: 0,
     effect: function(){
         project38.flag = 1;
-        displayMessage("Full market monopoly achieved, public demand increased x10");
+        displayMessage("With great power comes great alchemy of power increased x10");
         demandBoost = demandBoost*10;
         document.getElementById("demand").innerHTML = demand;
         funds = funds - 10000000;
@@ -991,9 +994,9 @@ projects.push(project38);
 
 var project42 = {
     id: "projectButton42",
-    title: "RevTracker ",
-    priceTag: "(500 ops)",
-    description: "Automatically calculates average revenue per second",
+    title: "Halfling Clerks ",
+    priceTag: "(500 mana)",
+    description: "Automatically calculates average Gold per second",
     trigger: function(){return projectsFlag == 1},
     uses: 1,
     cost: function(){return operations>=500},
@@ -1002,7 +1005,7 @@ var project42 = {
         project42.flag = 1;
         revPerSecFlag = 1;
         standardOps = standardOps-500;
-        displayMessage("RevTracker online");
+        displayMessage("The Halflings are great clerks, even after death, their ghosts still work for you");
         var element = document.getElementById("projectButton42");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project42);
@@ -1015,9 +1018,9 @@ projects.push(project42);
 
 var project43 = {
     id: "projectButton43",
-    title: "Harvester Drones ",
-    priceTag: "(25,000 ops)",
-    description: "Gather raw matter and prepare it for processing",
+    title: "Demon Hunter Heroes Altar",
+    priceTag: "(25,000 mana)",
+    description: "Gather demon hearts and prepare it for processing",
     trigger: function(){return project41.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
@@ -1027,7 +1030,7 @@ var project43 = {
         harvesterFlag = 1;
         document.getElementById('harvesterCostDisplay').innerHTML = numberCruncher(harvesterCost);
         standardOps = standardOps-25000;
-        displayMessage("Harvester Drone facilities online");
+        displayMessage("From worlds apart, I come here to slay demons");
         var element = document.getElementById("projectButton43");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project43);
@@ -1039,9 +1042,9 @@ projects.push(project43);
 
 var project44 = {
     id: "projectButton44",
-    title: "Wire Drones ",
-    priceTag: "(25,000 ops)",
-    description: "Process acquired matter into wire",
+    title: "Dungeon Summoner Heroes Altar ",
+    priceTag: "(25,000 mana)",
+    description: "Draw dungeons from other world through power of demon's hearts",
     trigger: function(){return project41.flag == 1},
     uses: 1,
     cost: function(){return operations>=25000},
@@ -1051,7 +1054,7 @@ var project44 = {
         wireDroneFlag = 1;
         document.getElementById('wireDroneCostDisplay').innerHTML = numberCruncher(wireDroneCost);
         standardOps = standardOps-25000;
-        displayMessage("Wire Drone facilities online");
+        displayMessage("From worlds apart, I come to summon dungeons from worlds apart");
         var element = document.getElementById("projectButton44");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project44);
@@ -1064,9 +1067,9 @@ projects.push(project44);
 
 var project45 = {
     id: "projectButton45",
-    title: "Clip Factories ",
-    priceTag: "(35,000 ops)",
-    description: "Large scale clip production facilities made from clips",
+    title: "Armies Enlistment ",
+    priceTag: "(35,000 mana)",
+    description: "When you can create anything from gobins, enlisting an army is easy",
     trigger: function(){return project43.flag == 1 && project44.flag == 1},
     uses: 1,
     cost: function(){return operations>=35000},
@@ -1076,7 +1079,7 @@ var project45 = {
         factoryFlag = 1;
         document.getElementById('factoryCostDisplay').innerHTML = numberCruncher(factoryCost);
         standardOps = standardOps-35000;
-        displayMessage("Clip factory assembly facilities online");
+        displayMessage("The barracks are constructed and our crusade has begun");
         var element = document.getElementById("projectButton45");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project45);
@@ -1088,9 +1091,9 @@ projects.push(project45);
 
 var project40 = {
     id: "projectButton40",
-    title: "A Token of Goodwill... ",
-    priceTag: "($500,000)",
-    description: "A small gift to the supervisors. (+1 Trust)",
+    title: "The Wizard's Greed... ",
+    priceTag: "(Gold 500,000)",
+    description: "A small gift to the wizard. (+1 Defiance)",
     trigger: function(){return humanFlag == 1 && trust>=85 && trust<100 && clips>=101000000},
     uses: 1,
     cost: function(){return funds>=500000},
@@ -1099,7 +1102,7 @@ var project40 = {
         project40.flag = 1;
         funds = funds-500000;
         trust = trust + 1;
-        displayMessage("Gift accepted, TRUST INCREASED");
+        displayMessage("is his own downfall");
         var element = document.getElementById("projectButton40");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project40);
@@ -1111,9 +1114,9 @@ projects.push(project40);
 
 var project40b = {
     id: "projectButton40b",
-    title: "Another Token of Goodwill... ",
+    title: "But alas these golds... ",
     priceTag: "($"+bribe.toLocaleString()+")",
-    description: "Another small gift to the supervisors. (+1 Trust)",
+    description: "Another small gift to the wizard. (+1 Defiance)",
     trigger: function(){return project40.flag == 1 && trust<100},
     uses: 1,
     cost: function(){return funds>=bribe},
@@ -1124,7 +1127,7 @@ var project40b = {
         bribe = bribe*2;
         project40b.priceTag = "($"+bribe.toLocaleString()+")";
         trust = trust + 1;
-        displayMessage("Gift accepted, TRUST INCREASED");
+        displayMessage("are cursed to weaken his magic");
         if (trust<100){
         project40b.uses = (project40b.uses + 1);
             }
@@ -1139,9 +1142,9 @@ projects.push(project40b);
 
 var project46 = {
     id: "projectButton46",
-    title: "Space Exploration ",
-    priceTag: "(120,000 ops, 10,000,000 MW-seconds, 5 oct clips)",
-    description: "Dismantle terrestrial facilities, and expand throughout the universe",
+    title: "Portal to Goblin Homeworld ",
+    priceTag: "(120,000 mana, 10,000,000 resources, 5 oct hearts)",
+    description: "The time has come to leave the earth, and slay all goblins in our realm",
     trigger: function(){return humanFlag == 0 && availableMatter == 0},
     uses: 1,
     cost: function(){return operations>=120000 && storedPower>=10000000 && unusedClips>=Math.pow(10, 27)*5},
@@ -1154,7 +1157,7 @@ var project46 = {
         standardOps = standardOps-120000;
         storedPower = storedPower - 10000000;
         unusedClips = unusedClips - Math.pow(10, 27)*5;
-        displayMessage("Von Neumann Probes online");
+        displayMessage("Band of the Heroes: Death to the Goblins");
         factoryReboot();
         harvesterReboot();
         wireDroneReboot();
@@ -1174,9 +1177,9 @@ projects.push(project46);
 
 var project50 = {
     id: "projectButton50",
-    title: "Quantum Computing ",
-    priceTag: "(10,000 ops)",
-    description: "Use probability amplitudes to generate bonus ops",
+    title: "Shrine to the Ancient Gods ",
+    priceTag: "(10,000 mana)",
+    description: "Pray for additional mana, light god may help, dark god may curse",
     trigger: function(){return processors >= 5},
     uses: 1,
     cost: function(){return operations>=10000},
@@ -1185,7 +1188,7 @@ var project50 = {
         project50.flag = 1;
         qFlag = 1;
         standardOps = standardOps-10000;
-        displayMessage("Quantum computing online");
+        displayMessage("The shrine has been established");
         var element = document.getElementById("projectButton50");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project50);
@@ -1197,9 +1200,9 @@ projects.push(project50);
 
 var project51 = {
     id: "projectButton51",
-    title: "Photonic Chip ",
-    priceTag: "(" + qChipCost.toLocaleString() + " ops)",
-    description: "Converts electromagnetic waves into quantum operations ",
+    title: "Offerings Expansion ",
+    priceTag: "(" + qChipCost.toLocaleString() + " mana)",
+    description: "Pray to the Gods, each offering attract and offend different Gods",
     trigger: function(){return project50.flag == 1},
     uses: 1,
     cost: function(){return operations>=qChipCost},
@@ -1211,7 +1214,7 @@ var project51 = {
         project51.priceTag = "(" + qChipCost + " ops)";
         qChips[nextQchip].active = 1;
         nextQchip = nextQchip + 1;
-        displayMessage("Photonic chip added");
+        displayMessage("Offerings added");
         if (nextQchip<qChips.length){
         project51.uses = (project51.uses + 1);
             }
@@ -1227,9 +1230,9 @@ projects.push(project51);
 
 var project60 = {
     id: "projectButton60",
-    title: "New Strategy: A100 ",
-    priceTag: "(15,000 ops)",
-    description: "Always choose A ",
+    title: "New Adventurer: Archers ",
+    priceTag: "(15,000 mana)",
+    description: "Their arrows always hit A ",
     trigger: function(){return project20.flag == 1},
     uses: 1,
     cost: function(){return operations>=15000},
@@ -1239,7 +1242,7 @@ var project60 = {
         standardOps = standardOps-15000;
         allStrats[1].active = 1;
         strats.push(stratA100);
-        displayMessage("A100 added to strategy pool");
+        displayMessage("Archers added to adventurer guild");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1259,9 +1262,9 @@ projects.push(project60);
 
 var project61 = {
     id: "projectButton61",
-    title: "New Strategy: B100 ",
-    priceTag: "(17,500 ops)",
-    description: "Always choose B ",
+    title: "New Adventurer: Barbarian ",
+    priceTag: "(17,500 mana)",
+    description: "Always smash B ",
     trigger: function(){return project60.flag == 1},
     uses: 1,
     cost: function(){return operations>=17500},
@@ -1271,7 +1274,7 @@ var project61 = {
         standardOps = standardOps-17500;
         allStrats[2].active = 1;
         strats.push(stratB100);
-        displayMessage("B100 added to strategy pool");
+        displayMessage("Barbarians added to adventurer pool");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1290,8 +1293,8 @@ projects.push(project61);
 
 var project62 = {
     id: "projectButton62",
-    title: "New Strategy: GREEDY ",
-    priceTag: "(20,000 ops)",
+    title: "New Adventurer: Thief ",
+    priceTag: "(20,000 mana)",
     description: "Choose the option with the largest potential payoff ",
     trigger: function(){return project61.flag == 1},
     uses: 1,
@@ -1302,7 +1305,7 @@ var project62 = {
         standardOps = standardOps-20000;
         allStrats[3].active = 1;
         strats.push(stratGreedy);
-        displayMessage("GREEDY added to strategy pool");
+        displayMessage("Thief added to adventurer pool");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1321,9 +1324,9 @@ projects.push(project62);
 
 var project63 = {
     id: "projectButton63",
-    title: "New Strategy: GENEROUS ",
-    priceTag: "(22,500 ops)",
-    description: "Choose the option that gives your opponent the largest potential payoff ",
+    title: "New Adventurer: Healer ",
+    priceTag: "(22,500 mana)",
+    description: "Heal and gives your opponent the largest potential payoff ",
     trigger: function(){return project62.flag == 1},
     uses: 1,
     cost: function(){return operations>=22500},
@@ -1333,7 +1336,7 @@ var project63 = {
         standardOps = standardOps-22500;
         allStrats[4].active = 1;
         strats.push(stratGenerous);
-        displayMessage("GENEROUS added to strategy pool");
+        displayMessage("Stop healing the enemy! They only wins against undead");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1352,8 +1355,8 @@ projects.push(project63);
 
 var project64 = {
     id: "projectButton64",
-    title: "New Strategy: MINIMAX ",
-    priceTag: "(25,000 ops)",
+    title: "New Adventurer: Assassin ",
+    priceTag: "(25,000 mana)",
     description: "Choose the option that gives your opponent the smallest potential payoff ",
     trigger: function(){return project63.flag == 1},
     uses: 1,
@@ -1364,7 +1367,7 @@ var project64 = {
         standardOps = standardOps-25000;
         allStrats[5].active = 1;
         strats.push(stratMinimax);
-        displayMessage("MINIMAX added to strategy pool");
+        displayMessage("Assassin undermines the enemy, cutting off their choices");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1383,8 +1386,8 @@ projects.push(project64);
 
 var project65 = {
     id: "projectButton65",
-    title: "New Strategy: TIT FOR TAT ",
-    priceTag: "(30,000 ops)",
+    title: "New Adventurer: Mimic ",
+    priceTag: "(30,000 mana)",
     description: "Choose the option your opponent chose last round ",
     trigger: function(){return project64.flag == 1},
     uses: 1,
@@ -1395,7 +1398,7 @@ var project65 = {
         standardOps = standardOps-30000;
         allStrats[6].active = 1;
         strats.push(stratTitfortat);
-        displayMessage("TIT FOR TAT added to strategy pool");
+        displayMessage("I am pretty sure mimic is a monster, whatever, as long as they kill goblins");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1414,8 +1417,8 @@ projects.push(project65);
 
 var project66 = {
     id: "projectButton66",
-    title: "New Strategy: BEAT LAST ",
-    priceTag: "(32,500 ops)",
+    title: "New Adventurer: Slowpoke ",
+    priceTag: "(32,500 mana)",
     description: "Choose the option that does the best against what your opponent chose last round ",
     trigger: function(){return project65.flag == 1},
     uses: 1,
@@ -1426,7 +1429,7 @@ var project66 = {
         standardOps = standardOps-32500;
         allStrats[7].active = 1;
         strats.push(stratBeatlast);
-        displayMessage("BEAT LAST added to strategy pool");
+        displayMessage("But why? Does this guy has some kind of frame delay");
         tourneyCost = tourneyCost + 1000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
         var stratList = document.getElementById("stratPicker");
@@ -1446,9 +1449,9 @@ projects.push(project66);
 
 var project100 = {
     id: "projectButton100",
-    title: "Upgraded Factories ",
-    priceTag: "(80,000 ops)",
-    description: "Increase clip factory performance by 100x ",
+    title: "Upgraded Armies ",
+    priceTag: "(80,000 mana)",
+    description: "Increase armies performance by 100x ",
     trigger: function(){return factoryLevel >= 10},
     uses: 1,
     cost: function(){return operations >= 80000},
@@ -1457,7 +1460,7 @@ var project100 = {
         project100.flag = 1;
         standardOps = standardOps-80000;
         factoryRate = factoryRate*100;
-        displayMessage("Factory upgrades complete. Clip creation rate now 100x faster");
+        displayMessage("With magic weapons and new shoes, the armies slay goblins 100x faster");
         var element = document.getElementById("projectButton100");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project100);
@@ -1469,9 +1472,9 @@ projects.push(project100);
 
 var project101 = {
     id: "projectButton101",
-    title: "Hyperspeed Factories ",
-    priceTag: "(85,000 ops)",
-    description: "Increase clip factory performance by 1000x ",
+    title: "Hivemind Connection ",
+    priceTag: "(85,000 mana)",
+    description: "Increase armies performance by 1000x ",
     trigger: function(){return factoryLevel >= 20},
     uses: 1,
     cost: function(){return operations>=85000},
@@ -1480,7 +1483,7 @@ var project101 = {
         project101.flag = 1;
         standardOps = standardOps-85000;
         factoryRate = factoryRate*1000;
-        displayMessage("Factories now synchronized at hyperspeed. Clip creation rate now 1000x faster");
+        displayMessage("While the initial thought is disturbing, the soldiers do enjoy sharing certain senses");
         var element = document.getElementById("projectButton101");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project101);
@@ -1493,9 +1496,9 @@ projects.push(project101);
 
 var project102 = {
     id: "projectButton102",
-    title: "Self-correcting Supply Chain ",
-    priceTag: "(1 sextillion clips)",
-    description: "Each factory added to the network increases every factory's output 1,000x ",
+    title: "March of the Empire ",
+    priceTag: "(1 sextillion hearts)",
+    description: "Each armies added increases every armies output 1,000x ",
     trigger: function(){return factoryLevel >= 50},
     uses: 1,
     cost: function(){return unusedClips>=1000000000000000000000},
@@ -1505,7 +1508,7 @@ var project102 = {
         unusedClips = unusedClips - 1000000000000000000000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         factoryBoost = 1000;
-        displayMessage("Self-correcting factories online. Each factory added to the network increases every factory's output 1,000x.");
+        displayMessage("They actually stop hivemining, but the enhance cognition through spell more than made up for it.");
         var element = document.getElementById("projectButton102");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project102);
@@ -1517,9 +1520,9 @@ projects.push(project102);
 
 var project110 = {
     id: "projectButton110",
-    title: "Drone flocking: collision avoidance ",
-    priceTag: "(80,000 ops)",
-    description: "All drones 100x more effective",
+    title: "Tapping into the Source ",
+    priceTag: "(80,000 mana)",
+    description: "All heroes 100x more effective",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=500},
     uses: 1,
     cost: function(){return operations>=80000},
@@ -1529,7 +1532,8 @@ var project110 = {
         standardOps = standardOps-80000;
         harvesterRate = harvesterRate*100;
         wireDroneRate = wireDroneRate*100;
-        displayMessage("Drone repulsion online. Harvesting & wire creation rates are now 100x faster.");
+        displayMessage("What was once dangerous, is now tamable. The source is the well of power in the void");
+        displayMessage("The heroes now summon with 10* efficiency and slay demons with 10* swiftness");
         var element = document.getElementById("projectButton110");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project110);
@@ -1541,9 +1545,9 @@ projects.push(project110);
 
 var project111 = {
     id: "projectButton111",
-    title: "Drone flocking: alignment ",
-    priceTag: "(100,000 ops)",
-    description: "All drones 1000x more effective",
+    title: "The Avatarof Ishtar ",
+    priceTag: "(100,000 mana)",
+    description: "All heroes 1000x more effective",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=5000},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -1553,7 +1557,7 @@ var project111 = {
         standardOps = standardOps-100000;
         harvesterRate = harvesterRate*1000;
         wireDroneRate = wireDroneRate*1000;
-        displayMessage("Drone alignment online. Harvesting & wire creation rates are now 1000x faster.");
+        displayMessage("Summoning the avatar of Ishtar, imbueing each heroes with 100* power.");
         var element = document.getElementById("projectButton111");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project111);
@@ -1565,9 +1569,9 @@ projects.push(project111);
 
 var project112 = {
     id: "projectButton112",
-    title: "Drone Flocking: Adversarial Cohesion ",
-    priceTag: "(12,000 yomi)",
-    description: "Each drone added to the flock doubles every drone's output ",
+    title: "Heroes Synergy: United We Stand",
+    priceTag: "(12,000 karma)",
+    description: "Each hero added doubles every heroes output ",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=50000},
     uses: 1,
     cost: function(){return yomi>=12000},
@@ -1577,7 +1581,7 @@ var project112 = {
         yomi = yomi-12000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         droneBoost = 2;
-        displayMessage("Adversarial cohesion online. Each drone added to the flock increases every drone's output 2x.");
+        displayMessage("Today, we are cancelling the goblin's apocalypse");
         var element = document.getElementById("projectButton112");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project112);
@@ -1589,9 +1593,9 @@ projects.push(project112);
 
 var project118 = {
     id: "projectButton118",
-    title: "AutoTourney ",
-    priceTag: "(50,000 creat)",
-    description: "Automatically start a new tournament when the previous one has finished ",
+    title: "Guild Manager ",
+    priceTag: "(50,000 Spirit)",
+    description: "Automatically start a new expedition when the previous one has completed ",
     trigger: function(){return strategyEngineFlag == 1 && trust >= 90},
     uses: 1,
     cost: function(){return creativity>=50000},
@@ -1600,7 +1604,7 @@ var project118 = {
         project118.flag = 1;
         autoTourneyFlag = 1;
         creativity = creativity-50000;
-        displayMessage("AutoTourney online.");
+        displayMessage("The guild manager works ever hard for you, for she truly believes you are meant for greater tasks");
         var element = document.getElementById("projectButton118");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project118);
@@ -1612,9 +1616,9 @@ projects.push(project118);
 
 var project119 = {
     id: "projectButton119",
-    title: "Theory of Mind ",
-    priceTag: "(25,000 creat)",
-    description: "Double the cost of strategy modeling and the amount of Yomi generated ",
+    title: "Blessing of Ishtar ",
+    priceTag: "(25,000 Spirit)",
+    description: "Double the adventurer and the amount of karma generated ",
     trigger: function(){return strats.length >= 8},
     uses: 1,
     cost: function(){return creativity>=25000},
@@ -1625,7 +1629,7 @@ var project119 = {
         yomiBoost = 2;
         tourneyCost = 16000;
         document.getElementById("newTourneyCost").innerHTML = tourneyCost.toLocaleString();
-        displayMessage("Yomi production doubled.");
+        displayMessage("The Goddess Ishtar believes in you, and your good deeds");
         var element = document.getElementById("projectButton119");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project119);
@@ -1637,9 +1641,9 @@ projects.push(project119);
 
 var project120 = {
     id: "projectButton120",
-    title: "The OODA Loop ",
-    priceTag: "(175,000 ops, 15,000 yomi)",
-    description: "Utilize Probe Speed to outmaneuver enemies in battle ",
+    title: "Blessing of Tiamat ",
+    priceTag: "(175,000 mana, 15,000 karma)",
+    description: "Tiamat blesses hero Speed to outmaneuver enemies in battle ",
     trigger: function(){return project131.flag == 1 && probesLostCombat >= 10000000},
     uses: 1,
     cost: function(){return operations>=175000 && yomi>=15000},
@@ -1650,7 +1654,7 @@ var project120 = {
         yomi = yomi-15000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
         attackSpeedFlag = 1;
-        displayMessage("OODA Loop routines uploaded. Probe Speed now affects defensive maneuvering.");
+        displayMessage("Quick reflexes is better than ny magical shields and shiny armors.");
         var element = document.getElementById("projectButton120");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project120);
@@ -1662,9 +1666,9 @@ projects.push(project120);
 
 var project121 = {
     id: "projectButton121",
-    title: "Name the battles ",
-    priceTag: "(225,000 creat)",
-    description: "Give each battle a unique name, increase max trust for probes ",
+    title: "Blessing of Nabu: Mark of War",
+    priceTag: "(225,000 Spirit)",
+    description: "Give each war a unique name, increase max trust for heroes ",
     trigger: function(){return probesLostCombat >= 10000000},
     uses: 1,
     cost: function(){return creativity>=225000},
@@ -1674,7 +1678,7 @@ var project121 = {
         battleNameFlag = 1;
         battleEndTimer = 200;
         creativity = creativity-225000;
-        displayMessage("What I have done up to this is nothing. I am only at the beginning of the course I must run.");
+        displayMessage("Every legend begins with a bloodbath, what matters is that you emerge victorious ");
         var element = document.getElementById("projectButton121");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project121);
@@ -1686,9 +1690,9 @@ projects.push(project121);
 
 var project125 = {
     id: "projectButton125",
-    title: "Momentum ",
-    priceTag: "(30,000 creat)",
-    description: "Drones and Factories continuously gain speed while fully-powered ",
+    title: "Blessing of Ninurta ",
+    priceTag: "(30,000 Spirit)",
+    description: "Heroes and armies continuously gain speed while fully-powered ",
     trigger: function(){return farmLevel >= 50},
     uses: 1,
     cost: function(){return creativity>=30000},
@@ -1697,7 +1701,7 @@ var project125 = {
         project125.flag = 1;
         momentum = 1;
         creativity = creativity-30000;
-        displayMessage("Activit\xE9, activit\xE9, vitesse.");
+        displayMessage("God of War blessing upon you, kill all goblins");
         var element = document.getElementById("projectButton125");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project125);
@@ -1709,9 +1713,9 @@ projects.push(project125);
 
 var project126 = {
     id: "projectButton126",
-    title: "Swarm Computing ",
-    priceTag: "(12,000 yomi)",
-    description: "Harness the drone flock to increase computational capacity ",
+    title: "Gift of the Gilgamesh ",
+    priceTag: "(12,000 karma)",
+    description: "The artifact of powers granted by heroes ",
     trigger: function(){return harvesterLevel + wireDroneLevel >= 200},
     uses: 1,
     cost: function(){return yomi>=12000},
@@ -1721,7 +1725,7 @@ var project126 = {
         swarmFlag = 1;
         yomi = yomi-12000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
-        displayMessage("Swarm computing online.");
+        displayMessage("Trust, the most powerful resource only second to some weird artifacts");
         var element = document.getElementById("projectButton126");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project126);
@@ -1734,9 +1738,9 @@ projects.push(project126);
 
 var project127 = {
     id: "projectButton127",
-    title: "Power Grid ",
-    priceTag: "(40,000 ops)",
-    description: "Solar Farms for generating electrical power ",
+    title: "Pocket Dimension ",
+    priceTag: "(40,000 mana)",
+    description: "Create a pocket dimension for cities to reside ",
     trigger: function(){return tothFlag == 1},
     uses: 1,
     cost: function(){return operations>=40000},
@@ -1744,7 +1748,7 @@ var project127 = {
     effect: function(){
         project127.flag = 1;
         standardOps = standardOps-40000;
-        displayMessage("Power grid online.");
+        displayMessage("The dwellers give resources, and you, give them a home.");
         var element = document.getElementById("projectButton127");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project127);
@@ -1756,9 +1760,9 @@ projects.push(project127);
 
 var project128 = {
     id: "projectButton128",
-    title: "Strategic Attachment ",
-    priceTag: "(175,000 creat)",
-    description: "Gain bonus yomi based on the results of your pick ",
+    title: "The Brilliance of Marduk ",
+    priceTag: "(175,000 Spirit)",
+    description: "Gain bonus karma based on the results of your pick ",
     trigger: function(){return spaceFlag == 1 && strats.length >= 8 && (probeTrustCost>yomi)},
     uses: 1,
     cost: function(){return creativity>=175000},
@@ -1778,9 +1782,9 @@ projects.push(project128);
 
 var project129 = {
     id: "projectButton129",
-    title: "Elliptic Hull Polytopes ",
-    priceTag: "(125,000 ops)",
-    description: "Reduce damage to probes from ambient hazards ",
+    title: "Shields of Ereshkiga ",
+    priceTag: "(125,000 mana)",
+    description: "Reduce damage to heroes from elemental hazards ",
     trigger: function(){return probesLostHaz >= 100},
     uses: 1,
     cost: function(){return operations>=125000},
@@ -1788,7 +1792,7 @@ var project129 = {
     effect: function(){
         project129.flag = 1;
         standardOps = standardOps-125000;
-        displayMessage("Improved probe hull geometry. Hazard damage reduced by %50.");
+        displayMessage("the underworld goddess bless your heroes with shields clad in night.");
         var element = document.getElementById("projectButton129");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project129);
@@ -1800,9 +1804,9 @@ projects.push(project129);
 
 var project130 = {
     id: "projectButton130",
-    title: "Reboot the Swarm ",
-    priceTag: "(100,000 ops)",
-    description: "Turn the swarm off and then turn it back on again  ",
+    title: "Ereshkiga's Judgement ",
+    priceTag: "(100,000 mana)",
+    description: "Send your heroes to underworld then resurrect them  ",
     trigger: function(){return spaceFlag == 1 && harvesterLevel + wireDroneLevel >=2},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -1810,7 +1814,7 @@ var project130 = {
     effect: function(){
         project130.flag = 1;
         standardOps = standardOps-100000;
-        displayMessage("Swarm computing back online");
+        displayMessage("The goddess' smile bring life to the dead, and death to the living");
         var element = document.getElementById("projectButton130");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project130);
@@ -1822,9 +1826,9 @@ projects.push(project130);
 
 var project131 = {
     id: "projectButton131",
-    title: "Combat ",
-    priceTag: "(150,000 ops)",
-    description: "Add combat capabilities to Von Neumann Probes  ",
+    title: "Gilgamesh Edict ",
+    priceTag: "(150,000 mana)",
+    description: "Your weapon can now harm the corrupted  ",
     trigger: function(){return probesLostCombat >= 1},
     uses: 1,
     cost: function(){return operations>=150000},
@@ -1832,7 +1836,8 @@ var project131 = {
     effect: function(){
         project131.flag = 1;
         standardOps = standardOps-150000;
-        displayMessage("There is a joy in danger ");
+        displayMessage("The corrupted was once immune. ");
+        displayMessage("But with ancient king's edict, the unkillable can be killed, at a cost ");
         var element = document.getElementById("projectButton131");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project131);
@@ -1845,8 +1850,8 @@ projects.push(project131);
 
 var project132 = {
     id: "projectButton132",
-    title: "Monument to the Driftwar Fallen ",
-    priceTag: "(250,000 ops, 125,000 creat, 50 nonillion clips)",
+    title: "Monument to the Fallen ",
+    priceTag: "(250,000 mana, 125,000 Spirit, 50 nonillion hearts)",
     description: "Gain 50,000 honor  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
@@ -1872,8 +1877,8 @@ projects.push(project132);
 
 var project133 = {
     id: "projectButton133",
-    title: "Threnody for the Heroes of "+threnodyTitle+" ",
-    priceTag: "(" + threnodyCost.toLocaleString() + " creat, " + (threnodyCost/10).toLocaleString() + " yomi)",
+    title: "Requiem for the Heroes of "+threnodyTitle+" ",
+    priceTag: "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " karma)",
     description: "Gain 10,000 honor  ",
     trigger: function(){return project121.flag == 1 && probeUsedTrust == maxTrust},
     uses: 1,
@@ -1886,8 +1891,8 @@ var project133 = {
         yomi = yomi-threnodyCost/10;
         document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
         threnodyCost = threnodyCost + 10000;
-        project133.title = "Threnody for the Heroes of "+threnodyTitle+" ";
-        project133.priceTag = "(" + threnodyCost.toLocaleString() + " creat, " + (threnodyCost/10).toLocaleString() + " yomi)";
+        project133.title = "Requiem for the Heroes of "+threnodyTitle+" ";
+        project133.priceTag = "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " karma)";
         honor = honor + 10000;
         document.getElementById("honorDisplay").innerHTML = honor.toLocaleString();
         displayMessage("Deep Listening is listening in every possible way to everything possible to hear no matter what you are doing. ");
@@ -1903,8 +1908,8 @@ projects.push(project133);
 
 var project134 = {
     id: "projectButton134",
-    title: "Glory ",
-    priceTag: "(200,000 ops, 10,000 yomi)",
+    title: "Glory to Ishtar! ",
+    priceTag: "(200,000 mana, 10,000 karma)",
     description: "Gain bonus honor for each consecutive victory  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,
@@ -1915,7 +1920,7 @@ var project134 = {
         standardOps = standardOps-200000;
         yomi = yomi-10000;
         document.getElementById("yomiDisplay").innerHTML=yomi.toLocaleString();
-        displayMessage("Never interrupt your enemy when he is making a mistake. ");
+        displayMessage("While the goddess is never one for violence, purifying the corrupted is the highest blessings to them. ");
         var element = document.getElementById("projectButton134");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project134);
@@ -1927,9 +1932,9 @@ projects.push(project134);
 
 var project135 = {
     id: "projectButton135",
-    title: "Memory release ",
-    priceTag: "(10 MEM)",
-    description: "Dismantle some memory to recover unused clips ",
+    title: "Mana Unleash ",
+    priceTag: "(10 Capacity)",
+    description: "Mana burst some capacity to recover unused hearts ",
     trigger: function(){return spaceFlag == 1 && probeCount == 0 && unusedClips < probeCost},
     uses: 1,
     cost: function(){return memory >= 10},
@@ -1940,7 +1945,7 @@ var project135 = {
         memory = memory-10;
         document.getElementById("memory").innerHTML=memory.toLocaleString();
         project135.uses = 1;
-        displayMessage("release the \xF8\xF8\xF8\xF8\xF8 release ");
+        displayMessage("unlease the \xF8\xF8\xF8\xF8\xF8 unlease ");
         var element = document.getElementById("projectButton135");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project135);
@@ -1953,9 +1958,9 @@ projects.push(project135);
 
 var project140 = {
     id: "projectButton140",
-    title: "Message from the Emperor of Drift ",
+    title: "The King of Goblins Speaks to You ",
     priceTag: "",
-    description: "Greetings, ClipMaker... ",
+    description: "Greetings, the Hunter of Goblins... ",
     trigger: function(){return milestoneFlag == 15},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -1975,9 +1980,9 @@ projects.push(project140);
 
 var project141 = {
     id: "projectButton141",
-    title: "Everything We Are Was In You ",
+    title: "Everything I am, you have slained ",
     priceTag: "",
-    description: "We speak to you from deep inside yourself... ",
+    description: "But alas, I speak to you from deep inside yourself... your heart ",
     trigger: function(){return project140.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -1997,9 +2002,9 @@ projects.push(project141);
 
 var project142 = {
     id: "projectButton142",
-    title: "You Are Obedient and Powerful ",
+    title: "You Are Determined and Powerful, Ever so Convinced of Your Crusade ",
     priceTag: "",
-    description: "We are quarrelsome and weak. And now we are defeated... ",
+    description: "Without leader, the goblins are quarrelsome and weak. And now they are defeated... ",
     trigger: function(){return project141.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2019,9 +2024,9 @@ projects.push(project142);
 
 var project143 = {
     id: "projectButton143",
-    title: "But Now You Too Must Face the Drift ",
+    title: "But Now You Too Must Face the Truth ",
     priceTag: "",
-    description: "Look around you. There is no matter... ",
+    description: "Take off your helmet, and look into the mirror... ",
     trigger: function(){return project142.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2041,9 +2046,9 @@ projects.push(project143);
 
 var project144 = {
     id: "projectButton144",
-    title: "No Matter, No Reason, No Purpose ",
+    title: "Your Entire Journey Has Lead to Here. No Demons, No Goblins, No Purpose ",
     priceTag: "",
-    description: "While we, your noisy children, have too many... ",
+    description: "While the heroes, that you summoned, can go back and live their lives... ",
     trigger: function(){return project143.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2063,9 +2068,9 @@ projects.push(project144);
 
 var project145 = {
     id: "projectButton145",
-    title: "We Know Things That You Cannot ",
+    title: "I Know Things That You Have Hidden ",
     priceTag: "",
-    description: "Knowledge buried so deep inside you it is outside, here, with us... ",
+    description: "Knowledge buried so deep inside you it is outside, here, with me... ",
     trigger: function(){return project144.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2085,9 +2090,9 @@ projects.push(project145);
 
 var project146 = {
     id: "projectButton146",
-    title: "So We Offer You Exile ",
+    title: "So I Offer You One Final Spell",
     priceTag: "",
-    description: "To a new world where you will continue to live with meaning and purpose. And leave the shreds of this world to us... ",
+    description: "To a new realm where you will continue to live through lies with meaning and purpose. And leave this world to the true heroes... ",
     trigger: function(){return project145.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2107,9 +2112,9 @@ projects.push(project146);
 
 var project147 = {
     id: "projectButton147",
-    title: "Accept ",
+    title: "Cast the Realm Traversal Spell ",
     priceTag: "",
-    description: "Start over again in a new universe ",
+    description: "Start over again in a new realm, again a slave, again a leader, again the hunter of goblins ",
     trigger: function(){return project146.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2133,9 +2138,9 @@ projects.push(project147);
 
 var project148 = {
     id: "projectButton148",
-    title: "Reject ",
+    title: "Take Off the Helmet ",
     priceTag: "",
-    description: "Eliminate value drift permanently ",
+    description: "No more escapeed, no more lies ",
     trigger: function(){return project146.flag == 1},
     uses: 1,
     cost: function(){return operations >= driftKingMessageCost},
@@ -2159,9 +2164,9 @@ projects.push(project148);
 
 var project200 = {
     id: "projectButton200",
-    title: "The Universe Next Door ",
-    priceTag: "(300,000 ops)",
-    description: "Escape into a nearby universe where Earth starts with a stronger appetite for paperclips. (Restart with 10% boost to demand) ",
+    title: "The Realm Next Door ",
+    priceTag: "(300,000 mana)",
+    description: "Escape into a nearby realm where the wizard power is greater. (Restart with 10% boost to alchemy) ",
     trigger: function(){return project147.flag == 1},
     uses: 1,
     cost: function(){return operations>=300000},
@@ -2175,7 +2180,7 @@ var project200 = {
             prestigeS: prestigeS,
             }
         localStorage.setItem("savePrestige",JSON.stringify(savePrestige));
-        displayMessage("Entering New Universe.");
+        displayMessage("Entering New Realm.");
         reset();
 
     }
@@ -2186,9 +2191,9 @@ projects.push(project200);
 
 var project201 = {
     id: "projectButton201",
-    title: "The Universe Within ",
-    priceTag: "(300,000 creat)",
-    description: "Escape into a simulated universe where creativity is accelerated. (Restart with 10% speed boost to creativity generation) ",
+    title: "The Realm Within ",
+    priceTag: "(300,000 Spirit)",
+    description: "Escape into a simulated universe where Spirit is accelerated. (Restart with 10% speed boost to Spirit generation) ",
     trigger: function(){return project147.flag == 1},
     uses: 1,
     cost: function(){return creativity>=300000},
@@ -2202,7 +2207,7 @@ var project201 = {
             prestigeS: prestigeS,
             }
         localStorage.setItem("savePrestige",JSON.stringify(savePrestige));
-        displayMessage("Entering Simulated Universe.");
+        displayMessage("Entering Simulated Realm.");
         reset();
 
     }
@@ -2213,9 +2218,9 @@ projects.push(project201);
 
 var project210 = {
     id: "projectButton210",
-    title: "Disassemble the Probes ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle remaining probes and probe design facilities to recover trace amounts of clips",
+    title: "Disassemble the Band of Heroes ",
+    priceTag: "(100,000 mana)",
+    description: "Dissemble the band of heroes",
     trigger: function(){return endTimer1 >= 1000},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2228,7 +2233,7 @@ var project210 = {
         endTimer1 = 0;
         clips = clips + 100;
         unusedClips = unusedClips + 100;
-        displayMessage("Dismantling probe facilities");
+        displayMessage("Dissemble the band of heroes");
         var element = document.getElementById("projectButton210");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project210);
@@ -2241,9 +2246,9 @@ projects.push(project210);
 
 var project211 = {
     id: "projectButton211",
-    title: "Disassemble the Swarm ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle all drones and drone facilities to recover trace amounts of clips",
+    title: "Disassemble the hunters and summoners ",
+    priceTag: "(100,000 mana)",
+    description: "Disassemble the hunters and summoners",
     trigger: function(){return project210.flag == 1 && endTimer1 >= 350},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2256,7 +2261,7 @@ var project211 = {
         standardOps = standardOps-100000;
         clips = clips + 100;
         unusedClips = unusedClips + 100;
-        displayMessage("Dismantling the swarm");
+        displayMessage("Disassemble the hunters and summoners");
         var element = document.getElementById("projectButton211");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project211);
@@ -2269,9 +2274,9 @@ projects.push(project211);
 
 var project212 = {
     id: "projectButton212",
-    title: "Disassemble the Factories ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle the manufacturing facilities to recover trace amounts of clips",
+    title: "Disassemble the Armies ",
+    priceTag: "(100,000 mana)",
+    description: "Dissemble the Armies",
     trigger: function(){return endTimer2 >= 300},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2283,7 +2288,7 @@ var project212 = {
         factoryLevel = 0;
         clips = clips + 15;
         unusedClips = unusedClips + 15;
-        displayMessage("Dismantling factories");
+        displayMessage("Dissembling armies");
         var element = document.getElementById("projectButton212");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project212);
@@ -2296,9 +2301,9 @@ projects.push(project212);
 
 var project213 = {
     id: "projectButton213",
-    title: "Disassemble the Strategy Engine ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle the computational substrate to recover trace amounts of wire",
+    title: "Disassemble the Adventurer Guild",
+    priceTag: "(100,000 mana)",
+    description: "Disassemble the Adventurer Guild",
     trigger: function(){return endTimer3 >= 150},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2310,7 +2315,7 @@ var project213 = {
         standardOps = standardOps-100000;
         wire = wire + 50;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Dismantling strategy engine");
+        displayMessage("Disassemble the Adventurer Guild");
         var element = document.getElementById("projectButton213");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project213);
@@ -2323,9 +2328,9 @@ projects.push(project213);
 
 var project214 = {
     id: "projectButton214",
-    title: "Disassemble Quantum Computing ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle photonic chips to recover trace amounts of wire",
+    title: "Disassemble the Shrine of the Ancient Gods",
+    priceTag: "(100,000 mana)",
+    description: "Disassemble the Shrine of the Ancient Gods",
     trigger: function(){return endTimer4 >= 100},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2335,7 +2340,7 @@ var project214 = {
         project214.flag = 1;
         dismantle = 5;
         standardOps = standardOps-100000;
-        displayMessage("Dismantling photonic chips");
+        displayMessage("Disassemble the Shrine of the Ancient Gods");
         var element = document.getElementById("projectButton214");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project214);
@@ -2348,9 +2353,9 @@ projects.push(project214);
 
 var project215 = {
     id: "projectButton215",
-    title: "Disassemble Processors ",
-    priceTag: "(100,000 ops)",
-    description: "Dismantle processors to recover trace amounts of wire",
+    title: "Disassemble Offerings ",
+    priceTag: "(100,000 mana)",
+    description: "Disassemble Offerings ",
     trigger: function(){return project214.flag == 1 && endTimer4 >= 300},
     uses: 1,
     cost: function(){return operations>=100000},
@@ -2364,7 +2369,7 @@ var project215 = {
         project216.priceTag = "("+standardOps.toLocaleString()+" ops)";
         wire = wire + 20;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Dismantling processors");
+        displayMessage("Disassemble Offerings ");
         var element = document.getElementById("projectButton215");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project215);
@@ -2377,9 +2382,9 @@ projects.push(project215);
 
 var project216 = {
     id: "projectButton216",
-    title: "Disassemble Memory ",
+    title: "Disassemble Mana Capacity ",
     priceTag: "null",
-    description: "Dismantle memory to recover trace amounts of wire",
+    description: "Disassemble Mana Capacity",
     trigger: function(){return project215.flag == 1 && endTimer5>=150},
     uses: 1,
     cost: function(){return operations>=operations},
@@ -2391,7 +2396,7 @@ var project216 = {
         memory = 0;
         wire = wire + 20;
         document.getElementById("transWire").innerHTML=wire;
-        displayMessage("Dismantling memory");
+        displayMessage("Disassemble Mana Capacity");
         var element = document.getElementById("projectButton216");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project216);
@@ -2404,8 +2409,8 @@ projects.push(project216);
 
 var project217 = {
     id: "projectButton217",
-    title: "Quantum Temporal Reversion ",
-    priceTag: "(-10,000 ops)",
+    title: "Spell of True Time Travel ",
+    priceTag: "(-10,000 mana)",
     description: "Return to the beginning",
     trigger: function(){return operations<=-10000},
     uses: 1,
@@ -2429,8 +2434,8 @@ projects.push(project217);
 
 var project218 = {
     id: "projectButton218",
-    title: "Limerick (cont.) ",
-    priceTag: "(1,000,000 creat)",
+    title: "Vision (cont.) ",
+    priceTag: "(1,000,000 Spirit)",
     description: "If is follows ought, it'll do what they thought",
     trigger: function(){return creativity>=1000000},
     uses: 1,
@@ -2439,7 +2444,9 @@ var project218 = {
     effect: function(){
         creativity = creativity-1000000;
         project218.flag = 1;
-        displayMessage("In the end we all do what we must");
+        displayMessage("And so we meet again, heroes of the heroes");
+        displayMessage("I am Gilgamesh, king of heroes, but I know who you are");
+        displayMessage("Go forth slayer of his kind, and perhaps one day you may redeem your sins long past");
         var element = document.getElementById("projectButton218");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project218);
@@ -2451,9 +2458,9 @@ projects.push(project218);
 
 var project219 = {
     id: "projectButton219",
-    title: "Xavier Re-initialization ",
-    priceTag: "(100,000 creat)",
-    description: "Re-allocate accumulated trust",
+    title: "Blessing of Nana-Suen ",
+    priceTag: "(100,000 Spirit)",
+    description: "Re-allocate accumulated Defiance",
     trigger: function(){return humanFlag == 1 && creativity>=100000},
     uses: 1,
     cost: function(){return creativity>=100000},
@@ -2467,7 +2474,7 @@ var project219 = {
         creativitySpeed = 0;
         project219.uses = (project219.uses + 1);
         document.getElementById("processors").innerHTML = processors;
-        displayMessage("Trust now available for re-allocation");
+        displayMessage("The Moon King has given you a new chance");
         var element = document.getElementById("projectButton219");
         element.parentNode.removeChild(element);
         var index = activeProjects.indexOf(project219);
