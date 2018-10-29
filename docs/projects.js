@@ -526,7 +526,7 @@ var project20 = {
     flag: 0,
     effect: function(){
         project20.flag = 1;
-        displayMessage("Run expedition, pick adventurers, earn karma equal to that adventurer's points.");
+        displayMessage("Run expedition, pick adventurers, earn Exp equal to that adventurer's points.");
         standardOps = standardOps - 12000;
         var element = document.getElementById("projectButton20");
         element.parentNode.removeChild(element);
@@ -785,7 +785,7 @@ projects.push(project35);
 var project27 = {
     id: "projectButton27",
     title: "Connecting the Three Worlds ",
-    priceTag: "(500 spirit, 1,000 karma, 20,000 mana)",
+    priceTag: "(500 spirit, 1,000 Exp, 20,000 mana)",
     description: "the Dead, the God, the living, A new era has begun. (+1 Defiance)",
     trigger: function(){return yomi>=1},
     uses: 1,
@@ -836,7 +836,7 @@ projects.push(project28);
 var project29 = {
     id: "projectButton29",
     title: "Free Teleportation ",
-    priceTag: "(5,000 karma, 30,000 mana)",
+    priceTag: "(5,000 Exp, 30,000 mana)",
     description: "Establish teleportation sigils in all cities (+12 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
@@ -862,7 +862,7 @@ projects.push(project29);
 var project30 = {
     id: "projectButton30",
     title: "Slay All Dragons ",
-    priceTag: "(1,500 karma, 50,000 mana)",
+    priceTag: "(1,500 Exp, 50,000 mana)",
     description: "Kill all dragon terrorizing human's habitat. (+15 Defiance)",
     trigger: function(){return project27.flag == 1},
     uses: 1,
@@ -967,7 +967,7 @@ projects.push(project37);
 var project38 = {
     id: "projectButton38",
     title: "Otherworldly Alchemy ",
-    priceTag: "(1,000 karma, Gold 10,000,000)",
+    priceTag: "(1,000 Exp, Gold 10,000,000)",
     description: "Connect the tower to the world's layline. (+1 Defiance)",
     trigger: function(){return project37.flag == 1},
     uses: 1,
@@ -1570,7 +1570,7 @@ projects.push(project111);
 var project112 = {
     id: "projectButton112",
     title: "Heroes Synergy: United We Stand",
-    priceTag: "(12,000 karma)",
+    priceTag: "(12,000 Exp)",
     description: "Each hero added doubles every heroes output ",
     trigger: function(){return (harvesterLevel + wireDroneLevel)>=50000},
     uses: 1,
@@ -1618,7 +1618,7 @@ var project119 = {
     id: "projectButton119",
     title: "Blessing of Ishtar ",
     priceTag: "(25,000 Spirit)",
-    description: "Double the adventurer and the amount of karma generated ",
+    description: "Double the adventurer and the amount of Exp generated ",
     trigger: function(){return strats.length >= 8},
     uses: 1,
     cost: function(){return creativity>=25000},
@@ -1642,7 +1642,7 @@ projects.push(project119);
 var project120 = {
     id: "projectButton120",
     title: "Blessing of Tiamat ",
-    priceTag: "(175,000 mana, 15,000 karma)",
+    priceTag: "(175,000 mana, 15,000 Exp)",
     description: "Tiamat blesses hero Speed to outmaneuver enemies in battle ",
     trigger: function(){return project131.flag == 1 && probesLostCombat >= 10000000},
     uses: 1,
@@ -1714,7 +1714,7 @@ projects.push(project125);
 var project126 = {
     id: "projectButton126",
     title: "Gift of the Gilgamesh ",
-    priceTag: "(12,000 karma)",
+    priceTag: "(12,000 Exp)",
     description: "The artifact of powers granted by heroes ",
     trigger: function(){return harvesterLevel + wireDroneLevel >= 200},
     uses: 1,
@@ -1762,7 +1762,7 @@ var project128 = {
     id: "projectButton128",
     title: "The Brilliance of Marduk ",
     priceTag: "(175,000 Spirit)",
-    description: "Gain bonus karma based on the results of your pick ",
+    description: "Gain bonus Exp based on the results of your pick ",
     trigger: function(){return spaceFlag == 1 && strats.length >= 8 && (probeTrustCost>yomi)},
     uses: 1,
     cost: function(){return creativity>=175000},
@@ -1878,7 +1878,7 @@ projects.push(project132);
 var project133 = {
     id: "projectButton133",
     title: "Requiem for the Heroes of "+threnodyTitle+" ",
-    priceTag: "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " karma)",
+    priceTag: "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " Exp)",
     description: "Gain 10,000 honor  ",
     trigger: function(){return project121.flag == 1 && probeUsedTrust == maxTrust},
     uses: 1,
@@ -1892,7 +1892,7 @@ var project133 = {
         document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
         threnodyCost = threnodyCost + 10000;
         project133.title = "Requiem for the Heroes of "+threnodyTitle+" ";
-        project133.priceTag = "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " karma)";
+        project133.priceTag = "(" + threnodyCost.toLocaleString() + " spirit, " + (threnodyCost/10).toLocaleString() + " Exp)";
         honor = honor + 10000;
         document.getElementById("honorDisplay").innerHTML = honor.toLocaleString();
         displayMessage("Deep Listening is listening in every possible way to everything possible to hear no matter what you are doing. ");
@@ -1909,7 +1909,7 @@ projects.push(project133);
 var project134 = {
     id: "projectButton134",
     title: "Glory to Ishtar! ",
-    priceTag: "(200,000 mana, 10,000 karma)",
+    priceTag: "(200,000 mana, 10,000 Exp)",
     description: "Gain bonus honor for each consecutive victory  ",
     trigger: function(){return project121.flag == 1},
     uses: 1,

@@ -1317,7 +1317,7 @@ function newTourney(){
     document.getElementById("vertStrat").innerHTML = "A";
     document.getElementById("horizStrat").innerHTML = "B";
 
-    document.getElementById("tourneyDisplay").innerHTML = "Pick main adventurer, run gobline slaying competition, gain karma";
+    document.getElementById("tourneyDisplay").innerHTML = "Pick main adventurer, run gobline slaying competition, gain Exp";
 
 
 }
@@ -1430,7 +1430,7 @@ function declareWinner(){
 
     if (milestoneFlag < 15){
 
-       displayMessage(strats[pick].name+" achieved "+strats[pick].currentScore+" karma in the expedition. Karma increased by "+strats[pick].currentScore * yomiBoost);
+       displayMessage(strats[pick].name+" achieved "+strats[pick].currentScore+" Exp in the expedition. Exp increased by "+strats[pick].currentScore * yomiBoost);
 
         }
 
@@ -1438,21 +1438,21 @@ function declareWinner(){
             yomi = yomi + 20000;
 
             if (milestoneFlag < 15){
-                displayMessage("Selected adventurers complete the expeditions (or tied with other guilds). +20,000 karma");
+                displayMessage("Selected adventurers complete the expeditions (or tied with other guilds). +20,000 Exp");
                 }
                 document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
 
             } else if (project128.flag == 1 && placeScore == strats[pick].currentScore) {
                 yomi = yomi + 15000;
                 if (milestoneFlag < 15){
-                displayMessage("Selected adventurers complete the expeditions in (or tied with other guilds) second place. +15,000 karma");
+                displayMessage("Selected adventurers complete the expeditions in (or tied with other guilds) second place. +15,000 Exp");
                 }
                 document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
 
             } else if (project128.flag == 1 && showScore == strats[pick].currentScore) {
                 yomi = yomi + 10000;
                 if (milestoneFlag < 15){
-                displayMessage("Selected adventurers complete the expeditions in (or tied with other guilds) third place. +10,000 karma");
+                displayMessage("Selected adventurers complete the expeditions in (or tied with other guilds) third place. +10,000 Exp");
                 }
                 document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
 
