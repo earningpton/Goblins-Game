@@ -16,5 +16,5 @@
   <author href="https://earningpton.github.io" email="saioutheworld@hotmail.com">
       Woramanot Yomjinda
   </author>
-  <preference name="android-minSdkVersion" value="26" />  
+  <preference name="android-targetSdkVersion" value="26" />  
 </widget>
