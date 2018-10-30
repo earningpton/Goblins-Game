@@ -26,14 +26,11 @@ function playSound () {
 function playSound2 () {
     if(project102.flag == 1){    const origAudio = document.getElementById('soundtrack3');
         origAudio.play();}
-    else{
-      if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
+    else if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
           origAudio.play();}
-      else{
+    else{
         const origAudio = document.getElementById('soundtrack1');
-        origAudio.play();
-      }
-    }
+        origAudio.play();}
   }
 
 
