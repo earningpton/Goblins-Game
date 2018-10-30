@@ -24,7 +24,7 @@ function playSound () {
     newAudio.play();
 }
 function playSound2 () {
-    if(project102.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
+    if(project46.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
         origAudio3.play();}
     else if(humanFlag == 0 ){    const origAudio2 = document.getElementById('soundtrack2');
           origAudio2.play();}
@@ -32,7 +32,7 @@ function playSound2 () {
         const origAudio1 = document.getElementById('soundtrack1');
         origAudio1.play();}
   }
-
+function isPlaying(audelem) { return !audelem.paused; }
 
 // Wire --------------------------------------------------------
 
@@ -1440,7 +1440,7 @@ function declareWinner(){
 
     if (pick<10){
 
-       tourneyReport("TOURNAMENT RESULTS (roll over for payoff grid)");
+       tourneyReport("EXPEDITION RESULTS (roll over for payoff grid)");
        yomi = yomi + strats[pick].currentScore * yomiBoost;
        document.getElementById("yomiDisplay").innerHTML = yomi.toLocaleString();
 

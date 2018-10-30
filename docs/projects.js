@@ -756,6 +756,11 @@ var project35 = {
         nanoWire = wire;
         humanFlag = 0;
 
+        if(isPlaying(origAudio1)){
+          origAudio1.pause();
+          playSound2 ();
+        }
+
         if (document.getElementById("projectButton219") != null){
         var element = document.getElementById("projectButton219");
         element.parentNode.removeChild(element);
@@ -1159,6 +1164,10 @@ var project46 = {
         standardOps = standardOps-120000;
         storedPower = storedPower - 10000000;
         unusedClips = unusedClips - Math.pow(10, 27)*5;
+        if(isPlaying(origAudio2)){
+          origAudio2.pause();
+          playSound2 ();
+        }
         displayMessage("Band of the Heroes: Death to the Goblins");
         factoryReboot();
         harvesterReboot();
