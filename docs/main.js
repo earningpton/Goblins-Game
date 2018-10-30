@@ -1018,8 +1018,8 @@ if (portfolioSize>0 && humanFlag == 1){
 
 var tourneyCost = 1000;
 var tourneyLvl = 1;
-var choiceANames = ["cooperate", "swerve", "macro", "fight", "bet", "raise_price", "opera", "go", "heads", "particle", "discrete", "peace", "search", "lead", "accept", "accept", "attack"];
-var choiceBNames = ["defect", "straight", "micro", "back_down", "fold", "lower_price", "football", "stay", "tails", "wave", "continuous", "war", "evaluate", "follow", "reject", "deny", "decay"];
+var choiceANames = ["A", "A"];
+var choiceBNames = ["B", "B"];
 var stratCounter = 0;
 var roundNum = 0;
 var hMove = 1;
@@ -1509,8 +1509,8 @@ function displayTourneyReport(){
 
         resultsFlag = 1;
 
-        document.getElementById("vertStrat").innerHTML = "&nbsp";
-        document.getElementById("horizStrat").innerHTML = "&nbsp";
+        document.getElementById("vertStrat").innerHTML = "A";
+        document.getElementById("horizStrat").innerHTML = "B";
 
         document.getElementById("tournamentTable").style.display = "none";
         document.getElementById("tournamentResultsTable").style.display = "";
