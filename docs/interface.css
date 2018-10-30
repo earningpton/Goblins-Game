@@ -754,7 +754,7 @@ p.hypnoDrone {
    opacity: 0.6;
    /*border: 1px solid #ffffff;*/
    border-radius: 3px;
-   background:url("stone.gif");
+   background:url("void.gif");
    background-position: left top;
    background-repeat: repeat;
 }
@@ -846,7 +846,7 @@ p.hypnoDrone {
    opacity: 0.6;
    /*border: 1px solid #ffffff;*/
    border-radius: 3px;
-   background:url("stone.gif");
+   background:url("void.gif");
    background-position: left top;
    background-repeat: repeat;
    padding: 2px 4px;
@@ -868,6 +868,7 @@ p.hypnoDrone {
 
    font-size: 15px;
    font-family: helvetica, serif;
+   color: white;
    text-decoration: none;
    vertical-align: middle;
    outline: none;
@@ -876,13 +877,14 @@ p.hypnoDrone {
 .button3:hover {
 
    border-radius: 10px;
-   border-color: coral;
-   background:url("note.gif");
+   border-color: gold;
+   background:url("knights.gif");
    background-position: left top;
    background-repeat: repeat;
    padding: 2px 4px;
    font-size: 15px;
    font-family: helvetica, serif;
+   color: white;
    text-decoration: none;
    vertical-align: middle;
    outline: none;
@@ -891,12 +893,13 @@ p.hypnoDrone {
 .button3:active {
 
    border-radius: 10px;
-   background:url("note.gif");
+   background:url("knights.gif");
    background-position: left top;
    background-repeat: repeat;
    padding: 2px 4px;
    font-size: 15px;
    font-family: helvetica, serif;
+   color: white;
    text-decoration: none;
    vertical-align: middle;
    outline: none;
@@ -906,11 +909,12 @@ p.hypnoDrone {
    opacity: 0.6;
    /*border: 1px solid #ffffff;*/
    border-radius: 10px;
-   background:url("note.gif");
+   background:url("knights.gif");
    background-position: left top;
    background-repeat: repeat;
    padding: 2px 4px;
    font-size: 15px;
+   color: white;
    font-family: helvetica, serif;
    text-decoration: none;
    vertical-align: middle;
