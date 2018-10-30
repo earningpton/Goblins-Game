@@ -25,40 +25,35 @@ function playSound () {
 }
 function playSound2 () {
     if(project102.flag == 1){    const origAudio = document.getElementById('soundtrack3');
-        origAudio.loop = true;
-        origAudio.play();}
+        myAudio = new Audio('lastmarch.mp3');
+        myAudio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        myAudio.play();
+      }
     else{
       if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
-          origAudio.loop = true;
-          origAudio.play();}
+      myAudio = new Audio('arcana.mp3');
+      myAudio.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+      }, false);
+      myAudio.play();
+
       else{
         const origAudio = document.getElementById('soundtrack1');
-        origAudio.loop = true;
-        origAudio.play();
+        myAudio = new Audio('defiance.mp3');
+        myAudio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        myAudio.play();
       }
     }
 
 }
 
-function sound(id){
-  if(isPlaying[id]){
-    audio[id].pause();
-    isPlaying[id] = false;
-    audio[id].currentTime = 0;
-  }
-  else{
-    audio[id].play();
-    isPlaying[id] = true;
-    audio[id].currentTime = 0;
-  }
-}
-
-function createAudio(src,i){
-  audio[i] = new Audio();
-  audio[i].src = src;
-  audio[i].loop = true;
-  isPlaying[i] = false;
-}
 
 // Wire --------------------------------------------------------
 
