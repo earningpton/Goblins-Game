@@ -7,7 +7,9 @@
     </head>
 
     <body>
-<audio id="titlescreen_audio" src="arcana.mp3" loop="loop"></audio>
+<audio loop autoplay muted controls id="titlescreen_audio">
+         <source type="audio/mp3" src="arcana.mp3"></source>
+</audio>
 <script>document.getElementById('titlescreen_audio').play();</script>
 <button class = "button2" id = "btnSoundTog"  onclick="document.getElementById('toggle').muted = true; return false">Toggle Sound: Recommended</button>
 
