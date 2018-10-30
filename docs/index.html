@@ -1,19 +1,15 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="titlescreen.css" />
-    <!--<link rel="stylesheet" type="text/css" href="interface.css" />
-    <script type="text/javascript" src="title.js?v2"></script> -->
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+    <script type="text/javascript" src="title.js?v2"></script>
 
     </head>
 
     <body>
-<!--<audio id="titlescreen_audio" src="arcana.mp3" loop="loop"></audio>-->
-<audio autoplay>
-  <source src="nomoremagic.mp3" type="audio/mpeg">
-</audio>
-
-<!--<button class = "button2" id = "btnSoundTog"  onclick="document.getElementById('toggle').muted = true; return false">Toggle Sound</button>
--->
+<audio id="titlescreen_audio" src="arcana.mp3" loop="loop"></audio>
+<script>document.getElementById('titlescreen_audio').play();</script>
+<button class = "button2" id = "btnSoundTog"  onclick="document.getElementById('toggle').muted = true; return false">Toggle Sound: Recommended</button>
 
 <div class="frame" id="wrapper" style=" position:absolute; top:0; bottom:0; left:0; right:0; border: width:100%; text-align:center; vertical-align:middle; margin:auto">
 
