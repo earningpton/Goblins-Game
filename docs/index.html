@@ -3,12 +3,16 @@
     <link rel="stylesheet" type="text/css" href="titlescreen.css" />
     <link rel="stylesheet" type="text/css" href="interface.css" />
     <script type="text/javascript" src="title.js?v2"></script>
-
+    <script type="text/javascript" src="main.js?v2"></script>
     </head>
 
     <body>
-<audio id="titlescreen_audio" src="arcana.mp3" preload="auto"></audio>
-<button class = "button2" id = "btnSoundTog"  onclick="playTitle()"> Title Ost</button><br />
+<audio id="title_aud" src="arcana.mp3" preload="auto"></audio>
+<button class = "button2" id = "btnSoundTog"  onclick="playTitle()"> Title Ost</button>
+<br />
+<audio id="play" src="slash.mp3" preload="auto"></audio>
+<button class = "button2" id ="btnMakePaperclip" onclick="playSound();">Kill One Goblin</button><br />
+<br />
 
 <div class="frame" id="wrapper" style=" position:absolute; top:0; bottom:0; left:0; right:0; border: width:100%; text-align:center; vertical-align:middle; margin:auto">
 
