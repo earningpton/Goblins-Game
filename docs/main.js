@@ -3588,22 +3588,22 @@ if (dismantle >= 7) {
     }
 
     if (endTimer6>=600 && milestoneFlag == 16) {
-        displayMessage("A Universal Paperclips Fan Game by Saiou");
+        displayMessage("A Universal Paperclips Full Remodel Fan Game by Saiou");
         milestoneFlag++;
     }
 
     if (endTimer6>=700 && milestoneFlag == 17) {
-        displayMessage("a main game programmed by Frank Lantz and combat programming by Bennett Foddy");
+        displayMessage("Universal Paper Clips are programmed by Frank Lantz and combat programming by Bennett Foddy");
         milestoneFlag++;
     }
 
     if (endTimer6>=800 && milestoneFlag == 18) {
-        displayMessage("'No More Magic' by Horror Pen and Every other musics in the game by Matthew Pablo");
+        displayMessage("'Magical Theme' by Remaxim, 'No More Magic' by Horror Pen, 'Heroic Demise' and 'The Fall of Arcana' by Matthew Pablo");
         milestoneFlag++;
     }
 
     if (endTimer6>=900 && milestoneFlag == 19) {
-        displayMessage("&#169; All the coding credits to 2017 Everybody House Games");
+        displayMessage("&#169; Game mechanisms credits to 2017 Everybody House Games, Writing credits to Saiou");
         milestoneFlag++;
     }
 
