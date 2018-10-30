@@ -3588,17 +3588,17 @@ if (dismantle >= 7) {
     }
 
     if (endTimer6>=600 && milestoneFlag == 16) {
-        displayMessage("A Universal Paperclips Full Remodel Fan Game by Saiou");
+        displayMessage("A goblin slaying adventure by Saiou");
         milestoneFlag++;
     }
 
     if (endTimer6>=700 && milestoneFlag == 17) {
-        displayMessage("Universal Paper Clips are programmed by Frank Lantz and combat programming by Bennett Foddy");
+        displayMessage("'Magical Theme' by Remaxim and 'No More Magic' by Horror Pen");
         milestoneFlag++;
     }
 
     if (endTimer6>=800 && milestoneFlag == 18) {
-        displayMessage("'Magical Theme' by Remaxim, 'No More Magic' by Horror Pen, 'Heroic Demise' and 'The Fall of Arcana' by Matthew Pablo");
+        displayMessage("'Heroic Demise' and 'The Fall of Arcana' by Matthew Pablo");
         milestoneFlag++;
     }
 
