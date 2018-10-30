@@ -23,7 +23,11 @@ function playSound () {
     const newAudio = origAudio.cloneNode()
     newAudio.play();
 }
+function playSound2 () {
+    const origAudio = document.getElementById('play2');
 
+    origAudio.play();
+}
 
 // Wire --------------------------------------------------------
 
