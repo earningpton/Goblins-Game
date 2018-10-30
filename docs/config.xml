@@ -19,6 +19,5 @@
   <preference name="android-targetSdkVersion" value="26" />
   <manifest>
   <uses-sdk android:targetSdkVersion="26" />
-  ...
   </manifest>
 </widget>
