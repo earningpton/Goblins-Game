@@ -17,7 +17,9 @@ function playThrenody(){
     }
 }
 // Other Sound Function ---------------------------------------------------------
-
+var origAudio1 = new Audio('defiance.mp3');
+var origAudio2 = new Audio('arcana.mp3');
+var origAudio3 = new Audio('lastmarch.mp3');
 function playSound () {
     const origAudio = document.getElementById('play');
     const newAudio = origAudio.cloneNode()
@@ -25,12 +27,12 @@ function playSound () {
 }
 
 function playSound2 () {
-    if(project46.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
+    if(project46.flag == 1){   origAudio3.id = 'soundtrack3';
         origAudio3.play();}
-    else if(humanFlag == 0 ){    const origAudio2 = document.getElementById('soundtrack2');
+    else if(humanFlag == 0 ){    origAudio2.id = 'soundtrack2');
           origAudio2.play();}
     else{
-        const origAudio1 = document.getElementById('soundtrack1');
+        origAudio1.id = 'soundtrack1';
         origAudio1.play();}
   }
 function isPlaying(audelem) { return !audelem.paused; }
