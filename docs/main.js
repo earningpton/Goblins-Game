@@ -23,6 +23,7 @@ function playSound () {
     const newAudio = origAudio.cloneNode()
     newAudio.play();
 }
+
 function playSound2 () {
     if(project46.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
         origAudio3.play();}
