@@ -167,8 +167,6 @@ var finalClips = 0;
 var resetFlag = 2;
 var threnodyAudio = new Audio();
 var threnodyLoadedBool = false;
-var origAudio1 = new Audio('defiance.mp3');
-var origAudio2 = new Audio('arcana.mp3');
-var origAudio3 = new Audio('lastmarch.mp3');
+
 var audio = [];
 var isPlaying = [];

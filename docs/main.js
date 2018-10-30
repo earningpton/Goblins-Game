@@ -20,20 +20,18 @@ function playThrenody(){
 
 function playSound () {
     const origAudio = document.getElementById('play');
-    const newAudio = origAudio.cloneNode();
+    const newAudio = origAudio.cloneNode()
     newAudio.play();
 }
-
 function playSound2 () {
-    if(project46.flag == 1){   origAudio3.id = 'soundtrack3';
+    if(project46.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
         origAudio3.play();}
-    else if(humanFlag == 0 ){    origAudio2.id = 'soundtrack2');
+    else if(humanFlag == 0 ){    const origAudio2 = document.getElementById('soundtrack2');
           origAudio2.play();}
     else{
-        origAudio1.id = 'soundtrack1';
+        const origAudio1 = document.getElementById('soundtrack1');
         origAudio1.play();}
   }
-
 function isPlaying(audelem) { return !audelem.paused; }
 
 // Wire --------------------------------------------------------
@@ -3600,7 +3598,7 @@ if (dismantle >= 7) {
     }
 
     if (endTimer6>=800 && milestoneFlag == 18) {
-        displayMessage("'Heroic Demise' and 'The Fall of Arcana' by Matthew Pablo");
+        displayMessage("'No More Magic' by Horror Pen, 'Heroic Demise' and 'The Fall of Arcana' by Matthew Pablo");
         milestoneFlag++;
     }
 
