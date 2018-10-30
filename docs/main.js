@@ -17,12 +17,10 @@ function playThrenody(){
     }
 }
 // Other Sound Function ---------------------------------------------------------
-var origAudio1 = new Audio('defiance.mp3');
-var origAudio2 = new Audio('arcana.mp3');
-var origAudio3 = new Audio('lastmarch.mp3');
+
 function playSound () {
     const origAudio = document.getElementById('play');
-    const newAudio = origAudio.cloneNode()
+    const newAudio = origAudio.cloneNode();
     newAudio.play();
 }
 
@@ -35,6 +33,7 @@ function playSound2 () {
         origAudio1.id = 'soundtrack1';
         origAudio1.play();}
   }
+
 function isPlaying(audelem) { return !audelem.paused; }
 
 // Wire --------------------------------------------------------
