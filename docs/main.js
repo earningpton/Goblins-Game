@@ -24,9 +24,29 @@ function playSound () {
     newAudio.play();
 }
 function playSound2 () {
-    const origAudio = document.getElementById('play2');
-    const newAudio = origAudio.cloneNode()
-    newAudio.play();
+    const origAudio = document.getElementById('soundtrack');
+
+    origAudio.play();
+}
+
+function sound(id){
+  if(isPlaying[id]){
+    audio[id].pause();
+    isPlaying[id] = false;
+    audio[id].currentTime = 0;
+  }
+  else{
+    audio[id].play();
+    isPlaying[id] = true;
+    audio[id].currentTime = 0;
+  }
+}
+
+function createAudio(src,i){
+  audio[i] = new Audio();
+  audio[i].src = src;
+  audio[i].loop = true;
+  isPlaying[i] = false;
 }
 
 // Wire --------------------------------------------------------

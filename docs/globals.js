@@ -166,17 +166,7 @@ var finalClips = 0;
 
 var resetFlag = 2;
 var threnodyAudio = new Audio();
-var threnodyLoadedBool = false; 
+var threnodyLoadedBool = false;
 
-
-
-
-
-
-
-
-
-
-
-
-
+var audio = [];
+var isPlaying = [];
