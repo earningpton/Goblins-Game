@@ -24,13 +24,13 @@ function playSound () {
     newAudio.play();
 }
 function playSound2 () {
-    if(project102.flag == 1){    const origAudio = document.getElementById('soundtrack3');
-        origAudio.play();}
-    else if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
-          origAudio.play();}
+    if(project102.flag == 1){    const origAudio3 = document.getElementById('soundtrack3');
+        origAudio3.play();}
+    else if(humanFlag == 0 ){    const origAudio2 = document.getElementById('soundtrack2');
+          origAudio2.play();}
     else{
-        const origAudio = document.getElementById('soundtrack1');
-        origAudio.play();}
+        const origAudio1 = document.getElementById('soundtrack1');
+        origAudio1.play();}
   }
 
 
