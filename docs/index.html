@@ -7,11 +7,11 @@
     </head>
 
     <body>
-<audio loop autoplay muted controls id="titlescreen_audio">
+<audio loop id="titlescreen_audio">
          <source type="audio/mp3" src="arcana.mp3"></source>
 </audio>
 <script>document.getElementById('titlescreen_audio').play();</script>
-<button class = "button2" id = "btnSoundTog"  onclick="document.getElementById('toggle').muted = true; return false">Toggle Sound: Recommended</button>
+<button class = "button2" id = "btnSoundTog"  onclick="document.getElementById('toggle').play()">Toggle Sound: Recommended</button>
 
 <div class="frame" id="wrapper" style=" position:absolute; top:0; bottom:0; left:0; right:0; border: width:100%; text-align:center; vertical-align:middle; margin:auto">
 
