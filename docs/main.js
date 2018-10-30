@@ -24,9 +24,20 @@ function playSound () {
     newAudio.play();
 }
 function playSound2 () {
-    const origAudio = document.getElementById('soundtrack');
+    if(project102.flag == 1){    const origAudio = document.getElementById('soundtrack3');
+        origAudio.loop = true;
+        origAudio.play();}
+    else{
+      if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
+          origAudio.loop = true;
+          origAudio.play();}
+      else{
+        const origAudio = document.getElementById('soundtrack1');
+        origAudio.loop = true;
+        origAudio.play();
+      }
+    }
 
-    origAudio.play();
 }
 
 function sound(id){
