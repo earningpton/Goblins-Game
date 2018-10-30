@@ -26,28 +26,19 @@ function playSound () {
 function playSound2 () {
     if(project102.flag == 1){    const origAudio = document.getElementById('soundtrack3');
         myAudio = new Audio('lastmarch.mp3');
-        myAudio.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
+
         myAudio.play();
       }
     else{
       if(humanFlag == 0 ){    const origAudio = document.getElementById('soundtrack2');
       myAudio = new Audio('arcana.mp3');
-      myAudio.addEventListener('ended', function() {
-          this.currentTime = 0;
-          this.play();
-      }, false);
+
       myAudio.play();
 
       else{
         const origAudio = document.getElementById('soundtrack1');
         myAudio = new Audio('defiance.mp3');
-        myAudio.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
+
         myAudio.play();
       }
     }
